@@ -1,6 +1,5 @@
 ############################# NEAR FUTURE ############################# 
 
-youtube->mp3 - utility 
 hugelol/hiddenlol scraper -> file -> live update emacs -> show embedded post
 utf-8 xscreensaver phosphor
 ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1) 
@@ -11,3 +10,4 @@ google it for you - open a site, focus, mark a section of text, effects - all in
 ############################# WILD ############################# 
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
+data tresure hunt generator - with clues for next one 
