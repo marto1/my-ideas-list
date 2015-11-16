@@ -10,4 +10,5 @@ google it for you - open a site, focus, mark a section of text, effects - all in
 ############################# WILD ############################# 
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
+js deobfuscator that actually does something - at least constant replacement 
 data tresure hunt generator - with clues for next one 
