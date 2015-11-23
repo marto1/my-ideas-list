@@ -1,0 +1,12 @@
+initial plan: 
+	hugelol/hiddenlol scraper -> file -> live update emacs -> show embedded post
+
+ended up:
+      scraper is easy, hugelol has simple API for getting the good stuff
+      hidden doesn't have that - manual fetching will be needed #TODO
+      no idea about hugereaction, etc. #TODO
+      could be useful to make it fetch from similar webservices #TODO
+      emacs doesn't seem to have out-of-the-box proper html+js support, w3m js-minimal could be start #TODO
+      add limit to scraper #TODO
+      ideal case scenario - download each X seconds -> buffer to some bash thing -> render to emacs
+            	 	    ^implemented    	       ^no idea                     ^ (╥_╥)
