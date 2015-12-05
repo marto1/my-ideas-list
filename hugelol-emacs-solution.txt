@@ -6,7 +6,10 @@ ended up:
       hidden doesn't have that - manual fetching will be needed #TODO
       no idea about hugereaction, etc. #TODO
       could be useful to make it fetch from similar webservices #TODO
-      emacs doesn't seem to have out-of-the-box proper html+js support, w3m js-minimal could be start #TODO
+      w3m was not good enough. 
       add limit to scraper #TODO
       ideal case scenario - download each X seconds -> buffer to some bash thing -> render to emacs
-            	 	    ^implemented    	       ^no idea                     ^ (╥_╥)
+            	 	    ^implemented    	       ^no idea                     ^ (╥_╥) implemented
+			    			       	   			    but very buggy still
+										    #TODO doesn't support multiple windows
+										    #TODO is not a mode still
