@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+bidirectional IPC communication with browser through keyboard events. (I know)
 ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1) 
 (like https://github.com/gusnan/devilspie2/blob/f12744d0735e4dde5679734ab57bc77ee8ab1ec6/src/xutils.c#L194)
 mozilla readability - dump to stdout utility
