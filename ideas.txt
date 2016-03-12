@@ -1,5 +1,4 @@
 ############################# NEAR FUTURE #############################
-tabbed - special tab that gives clock in title and other features, example: [xterm, xterm, xterm, 11:25 08/03/2016]
 git cannot download(just download) a single file or directory, bad
 bidirectional IPC communication with browser through keyboard events. (I know)
 ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1) 

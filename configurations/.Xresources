@@ -17,3 +17,6 @@ xterm*toolBar:            false
 XTerm*selectToClipboard:  true
 xterm*backarrowKeyIsErase:false
 xterm*metaSendsEscape:    true
+xterm*allowTitleOps:      true
+xterm*allowWindowOps:     true
+xterm*allowFontOps:       true
