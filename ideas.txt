@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+fast and hackable irc2rss.
 many-to-one zero overhead compositor. (many events -> compositor -> stdout)
 simpler GNOME Do.
 git cannot download(just download) a single file or directory, bad
