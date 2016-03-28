@@ -17,3 +17,4 @@ data tresure hunt generator - with clues for next one
 As the question Why? is fundamental to science there should be a quick way(in Firefox for example) to ask it when a statement is made.
 For example: Go to Water wiki page -> "Water is widely used in chemical reactions as a solvent" -> "ask" why -> get statistics and verification in an orthogonal way.
 Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
+build kindle-like reader
