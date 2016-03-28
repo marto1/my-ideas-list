@@ -1,7 +1,7 @@
 ############################# NEAR FUTURE #############################
-
-many-to-one zero overhead compositor. (many events -> compositor -> stdout)
+rule-based testing. Example: set variable lock variable to be only one type; or never cross range 100-240 while running program(or tests)
 simpler GNOME Do.
+many-to-one zero overhead compositor. (many events -> compositor -> stdout)
 git cannot download(just download) a single file or directory, bad
 bidirectional IPC communication with browser through keyboard events. (I know)
 ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1) 
@@ -12,8 +12,8 @@ google it for you - open a site, focus, mark a section of text, effects - all in
 ############################# WILD ############################# 
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
-js deobfuscator that actually does something - at least constant replacement 
+js deobfuscator that actually does something - at least constant replacement (tools for debugging, really, they all suck currently)
 data tresure hunt generator - with clues for next one 
 As the question Why? is fundamental to science there should be a quick way(in Firefox for example) to ask it when a statement is made.
 For example: Go to Water wiki page -> "Water is widely used in chemical reactions as a solvent" -> "ask" why -> get statistics and verification in an orthogonal way.
-Tree-based browsing. Tabbing is not efficient enough and does no really follow how my brain works - tree-based browsing.
+Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
