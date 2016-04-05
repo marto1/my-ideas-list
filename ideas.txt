@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
 rule-based testing. Example: set variable lock variable to be only one type; or never cross range 100-240 while running program(or tests)
 simpler GNOME Do.
 many-to-one zero overhead compositor. (many events -> compositor -> stdout)
@@ -18,3 +19,5 @@ As the question Why? is fundamental to science there should be a quick way(in Fi
 For example: Go to Water wiki page -> "Water is widely used in chemical reactions as a solvent" -> "ask" why -> get statistics and verification in an orthogonal way.
 Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
 build kindle-like reader
+diagram generation language that is not painfull to use.
+
