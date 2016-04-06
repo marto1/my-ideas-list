@@ -1,5 +1,6 @@
 ############################# NEAR FUTURE #############################
 command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
+capture drawing library calls from browsers.(ltrace!?)
 rule-based testing. Example: set variable lock variable to be only one type; or never cross range 100-240 while running program(or tests)
 simpler GNOME Do.
 many-to-one zero overhead compositor. (many events -> compositor -> stdout)
