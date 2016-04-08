@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+cloning of running systems with hash caching(is that implemented in rsync kinda already?)
 command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
 capture drawing library calls from browsers.(ltrace!?)
 rule-based testing. Example: set variable lock variable to be only one type; or never cross range 100-240 while running program(or tests)
