@@ -13,6 +13,7 @@ mozilla readability - dump to stdout utility
 google it for you - open a site, focus, mark a section of text, effects - all in a url
 
 ############################# WILD ############################# 
+how to prove something computes?
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
 js deobfuscator that actually does something - at least constant replacement (tools for debugging, really, they all suck currently)
@@ -22,4 +23,3 @@ For example: Go to Water wiki page -> "Water is widely used in chemical reaction
 Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
 build kindle-like reader
 diagram generation language that is not painfull to use.
-
