@@ -24,3 +24,4 @@ For example: Go to Water wiki page -> "Water is widely used in chemical reaction
 Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
 build kindle-like reader
 diagram generation language that is not painfull to use.
+byte code as interface to relational databases 
