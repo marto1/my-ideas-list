@@ -9,11 +9,60 @@ ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -threads 4 -y
 python setup.py bdist_wheel --universal
 twine register dist/*
 twine upload dist/*
-
 * convert list of timestamps to dates
 grep -F 'quit' bla.txt | cut -f2 -d" " > new.txt #list of timestamps
 while read in; do date -d @"$in"; done < new.txt
 
+* uncompress .xz files
+unxz
+
+* reboot every 5th minute
+
+*/5 * * * * sudo /sbin/reboot
+
+* Get Xorg version
+
+X -version
+
+* Get software version package - ubuntu
+
+sudo apt-cache show libc6
+
+* fglrx dependencies
+
+debhelper dh-modaliases execstack dpkg-dev dpkg-dev dkms xserver-xorg-dev (only 64 bit - lib32gcc1)
+* tar compress directory
+tar -zcvf archive-name.tar.gz directory-name
+
+* ftp upload(from secure mobile)
+ftp -inv IP <<EOF
+user USR PASS
+binary
+cd directory
+append local-name remote-name
+bye
+EOF
+
+* Change gateway over ssh
+route -n
+route del default && route add default gw IP ppp0 #DANGEROUS 
+* ISO 8601 format date
+date --iso-8601
+* CHECK TCP connection to address
+import socket
+TCP_IP = IP
+TCP_PORT = port
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((TCP_IP, TCP_PORT))
+s.close()
+
+* Resolve DNS python
+import socket
+data = socket.gethostbyname_ex("google.com")
+print data
+* Default language env variable
+
+LANG=C -> default language
 
 * better code   
   source control?
