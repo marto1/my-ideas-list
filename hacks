@@ -9,16 +9,21 @@ ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -threads 4 -y
 python setup.py bdist_wheel --universal
 twine register dist/*
 twine upload dist/*
-* better code  
-  Do you use source control?
-  Can you make a build in one step?
-  Do you make daily builds?
-  Do you have a bug database?
-  Do you fix bugs before writing new code?
-  Do you have an up-to-date schedule?
-  Do you have a spec?
-  Do programmers have quiet working conditions?
-  Do you use the best tools money can buy?
-  Do you have testers?
-  Do new candidates write code during their interview?
-  Do you do hallway usability testing?
+
+* convert list of timestamps to dates
+grep -F 'quit' bla.txt | cut -f2 -d" " > new.txt #list of timestamps
+while read in; do date -d @"$in"; done < new.txt
+
+
+* better code   
+  source control?
+  build in one step?
+  daily builds?
+  bug database?
+  fix bugs before writing new code?
+  up-to-date schedule?
+  spec?
+  quiet working conditions?
+  use the best tools money can buy?
+  have testers?
+  hallway usability testing?
