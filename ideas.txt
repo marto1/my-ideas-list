@@ -25,3 +25,4 @@ Tree-based browsing. Tabbing is not efficient enough and does not really follow 
 build kindle-like reader
 diagram generation language that is not painfull to use.
 byte code as interface to relational databases 
+get the code for the "stack overflow autocompletion", combine it with dash repos and make a standalone tool for browsing docs.
