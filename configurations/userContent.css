@@ -1,0 +1,40 @@
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']) {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+}
+
+#downloads-indicator-counter {
+    color: white;
+}
+
+textarea {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+}
+
+::-moz-selection {
+    background-color: black;
+    color: white;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+} 
+
+
+select {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+}
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+@namespace svg url("http://www.w3.org/2000/svg");
+
+@-moz-document url("chrome://browser/content/browser.xul") {
+
+}
