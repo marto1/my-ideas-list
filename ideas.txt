@@ -12,6 +12,7 @@ ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1)
 (like https://github.com/gusnan/devilspie2/blob/f12744d0735e4dde5679734ab57bc77ee8ab1ec6/src/xutils.c#L194)
 mozilla readability - dump to stdout utility
 google it for you - open a site, focus, mark a section of text, effects - all in a url
+add fifo channels to xstatus for async updates, also optional XEMBED channel for embedding app in the window xstatus is occupying.
 
 ############################# WILD ############################# 
 how to prove something computes?
