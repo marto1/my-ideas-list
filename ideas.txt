@@ -1,5 +1,5 @@
 ############################# NEAR FUTURE #############################
-dependency trees of technologies. What was built on top of what.
+simple text viewer with basic formatting for touch screen.
 cloning of running systems with hash caching(is that implemented in rsync kinda already?)
 command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
 capture drawing library calls from browsers.(ltrace!?)
