@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
 scrape some "how to..." sites and add to hacks.
 simple text viewer with basic formatting for touch screen.
 cloning of running systems with hash caching(is that implemented in rsync kinda already?)

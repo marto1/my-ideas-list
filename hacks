@@ -86,3 +86,8 @@ https://github.com/dbohdan/structured-text-tools
 from base64 import b64encode, b64decode
 b64encode(s[, altchars])
 b64decode(s[, altchars])
+* python utf8
+# -*- coding: utf-8 -*-
+* rpi get temperature sensor
+cd /opt/vc/bin
+LD_LIBRARY_PATH=/opt/vc/lib ./vcgencmd measure_temp 
