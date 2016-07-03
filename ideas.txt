@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+static analysis tool that shows(colors in) repeating sections of code
 auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
 scrape some "how to..." sites and add to hacks.
 simple text viewer with basic formatting for touch screen.
