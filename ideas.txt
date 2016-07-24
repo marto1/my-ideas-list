@@ -30,3 +30,4 @@ build kindle-like reader
 diagram generation language that is not painfull to use.
 byte code as interface to relational databases 
 get the code for the "stack overflow autocompletion", combine it with dash repos and make a standalone tool for browsing docs.
+soil prototyper - a device that can control the enviroment of soil so that it can come up with recepies for transforming bad soil to good soil
