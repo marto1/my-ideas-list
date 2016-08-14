@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE #############################
+tool to download images from search keyword(with multiple backends preferably)
 static analysis tool that shows(colors in) repeating sections of code
 auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
 scrape some "how to..." sites and add to hacks.

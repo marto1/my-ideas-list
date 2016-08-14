@@ -97,3 +97,6 @@ awk '{print $1}' hashes.log | sort | uniq -cd
 sudo modprobe -r uvcvideo
 * get a list of offending ECDSA keys from a file 
 grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
+* replace each letter with a symbol in regex
+\w -> .
+replaces all letters with dots
