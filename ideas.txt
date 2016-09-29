@@ -1,5 +1,6 @@
 ############################# NEAR FUTURE #############################
 tool to download images from search keyword(with multiple backends preferably)
+pattern finder for forth source code
 static analysis tool that shows(colors in) repeating sections of code
 a database with how much things take to compute on average.
 auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
