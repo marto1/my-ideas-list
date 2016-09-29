@@ -1,6 +1,7 @@
 ############################# NEAR FUTURE #############################
 tool to download images from search keyword(with multiple backends preferably)
 static analysis tool that shows(colors in) repeating sections of code
+a database with how much things take to compute on average.
 auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
 scrape some "how to..." sites and add to hacks.
 simple text viewer with basic formatting for touch screen.
@@ -17,6 +18,7 @@ ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1)
 mozilla readability - dump to stdout utility
 google it for you - open a site, focus, mark a section of text, effects - all in a url
 add fifo channels to xstatus for async updates, also optional XEMBED channel for embedding app in the window xstatus is occupying.
+html selection tool - select html on pages and copy it somewhere  
 
 ############################# WILD ############################# 
 how to prove something computes?
