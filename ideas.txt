@@ -21,6 +21,7 @@ mozilla readability - dump to stdout utility
 google it for you - open a site, focus, mark a section of text, effects - all in a url
 add fifo channels to xstatus for async updates, also optional XEMBED channel for embedding app in the window xstatus is occupying.
 html selection tool - select html on pages and copy it somewhere  
+wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
 
 ############################# WILD ############################# 
 how to prove something computes?
