@@ -1,5 +1,6 @@
 ############################# NEAR FUTURE #############################
 tool to download images from search keyword(with multiple backends preferably)
+select and extract text with image processing from selection
 pattern finder for forth source code
 python run any application and color in used code.
 static analysis tool that shows(colors in) repeating sections of code
