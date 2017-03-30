@@ -100,3 +100,33 @@ grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
 * replace each letter with a symbol in regex
 \w -> .
 replaces all letters with dots
+* remove lines from one file which are in another
+grep -F -v -x -f uhashes.log hashes.log | wc -l
+* See all userland processes
+ ps a --ppid 2 -p 2 --deselect
+* scan for wifi networks
+sudo iwlist wlan0 scan
+* chrome task manager
+shift+enter
+* print last line
+tail -1
+* cut by tab
+cut -d'       ' -f 1
+* remove leftover packages
+sudo apt-get remove --purge $(sudo dpkg -l | grep "^rc" | awk '{print $2}' | tr '\n' ' ')
+* start without a cursor
+startx -- -nocursor
+* change layout
+DISPLAY=:0.0 setxkbmap -layout dk
+* change layout on tty
+sudo loadkeys dk
+* test sound over HDMI
+speaker-test -c 2 -r 48000 -D hw:0,3
+* logrotate manually
+logrotate -d [your_config_file]
+* nmap scan LAN for mac addresses
+nmap -sP 192.168.0.*
+* add key to apt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3C962022012520A0
+* untar tar.gz
+tar -xzf file
