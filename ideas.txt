@@ -1,4 +1,4 @@
-############################# NEAR FUTURE #############################
+############################# NEAR FUTURE ############################# 
 tool to download images from search keyword(with multiple backends preferably)
 select and extract text with image processing from selection
 pattern finder for forth source code
@@ -23,6 +23,8 @@ google it for you - open a site, focus, mark a section of text, effects - all in
 add fifo channels to xstatus for async updates, also optional XEMBED channel for embedding app in the window xstatus is occupying.
 html selection tool - select html on pages and copy it somewhere  
 wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
+modify "sl" program to be a truck with a label "religion of peace"
+(and running people)
 
 ############################# WILD ############################# 
 how to prove something computes?

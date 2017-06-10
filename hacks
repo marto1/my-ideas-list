@@ -130,3 +130,7 @@ nmap -sP 192.168.0.*
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3C962022012520A0
 * untar tar.gz
 tar -xzf file
+* delete duplicate files
+fdupes -dN .
+* tar directory
+tar -czvf my_directory.tar.gz -C my_directory .
