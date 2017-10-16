@@ -139,4 +139,4 @@ import random
 s = range(5)
 random.shuffle(s)
 * get modules from python files 
-grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from//' | tr -d " " | sort | uniq
+grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
