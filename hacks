@@ -134,3 +134,9 @@ tar -xzf file
 fdupes -dN .
 * tar directory
 tar -czvf my_directory.tar.gz -C my_directory .
+* shuffle list
+import random
+s = range(5)
+random.shuffle(s)
+* get modules from python files 
+grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from//' | tr -d " " | sort | uniq
