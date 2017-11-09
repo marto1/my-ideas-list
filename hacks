@@ -66,18 +66,6 @@ LANG=C -> default language
 
 * manipulating structured text data
 https://github.com/dbohdan/structured-text-tools
-* better code   
-  source control?
-  build in one step?
-  daily builds?
-  bug database?
-  fix bugs before writing new code?
-  up-to-date schedule?
-  spec?
-  quiet working conditions?
-  use the best tools money can buy?
-  have testers?
-  hallway usability testing?
 * emacs - replace on yank
 (delete-selection-mode 1)
 * emacs - clear kill ring
