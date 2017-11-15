@@ -90,6 +90,77 @@ grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
 replaces all letters with dots
 * remove lines from one file which are in another
 grep -F -v -x -f uhashes.log hashes.log | wc -l
+* Get not-installed-package deb links
+sudo apt-get install --yes --no-download --reinstall --print-uris xdotool
+
+out:
+'http://ports.ubuntu.com/pool/universe/x/xdotool/libxdo3_3.20130111.1-3.1_armhf.deb' libxdo3_1%3a3.20130111.1-3.1_armhf.deb 17644 MD5Sum:10057d4dbbdcee72f32bbc109ff9863d
+'http://ports.ubuntu.com/pool/universe/x/xdotool/xdotool_3.20130111.1-3.1_armhf.deb' xdotool_1%3a3.20130111.1-3.1_armhf.deb 35606 MD5Sum:a84b1b4530df83adfe0a7ca594533fe0
+
+* compress .xz files
+xz -k -9 <file>
+
+* launch xterm with geometry
+DISPLAY=:0.0 xterm -geometry 80x24+10+10
+* test VW
+ DISPLAY=:0.0 glxgears -fullscreen
+* arandr remote
+ssh -X blabla
+arandr --randr-display :0.0
+* configure for 32 bit on 64 bit host
+  ./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
+* manually set window to a resolution
+DISPLAY=:0.0 wmctrl -r chrome -b toggle,fullscreen
+DISPLAY=:0.0 wmctrl -r chrome -e 0,0,0,1080,3840
+* i3 wm send restart/any config command
+DISPLAY=:0 i3-msg restart
+* i3 reload with debug
+DISPLAY=:0 i3-msg 'debuglog on; shmlog on; reload'
+* i3 exit fullscreen mode by default
+Alt+f
+* xrandr check
+DISPLAY=:0.0 xrandr -q
+* qemu load i386 raw image
+qemu-system-i386 -net nic,model=rtl8139 -net user -m 512M -boot order=d -drive file=NAME.img,format=raw
+* create empty image
+fallocate -l 1G test.img
+* Show top five CPU consuming processes
+ps aux | sort -rk 3,3 | head -n 6
+* exclude grepping self from ps au
+xps aux | grep "[f]nord"
+* List package dependencies
+apt-cache depends python
+* SOCKS proxy using tunnel
+ssh -N -D 2001 -p port username@servername
+* tar.gz folder
+tar -zcvf archive-name.tar.gz directory-name
+* Virtual monitor/server
+apt-get install xvfb
+Xvfb -shmem -screen 0 1280x1024x24
+DISPLAY=:0 xdpyinfo
+^verify
+* Diff two directories recursively
+diff -rq dir1 dir2
+* See all userland processes
+ ps a --ppid 2 -p 2 --deselect
+* scan for wifi networks
+sudo iwlist wlan0 scan
+* chrome task manager
+shift+enter
+* print last line
+tail -1
+* cut by tab
+cut -d'       ' -f 1
+* remove leftover packages
+tar -zcvf archive-name.tar.gz directory-name
+* Virtual monitor/server
+apt-get install xvfb
+Xvfb -shmem -screen 0 1280x1024x24
+DISPLAY=:0 xdpyinfo
+^verify
+* Diff two directories recursively
+diff -rq dir1 dir2
+
 * See all userland processes
  ps a --ppid 2 -p 2 --deselect
 * scan for wifi networks
@@ -128,3 +199,26 @@ s = range(5)
 random.shuffle(s)
 * get modules from python files 
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
+* checksum recursively
+find / -type f -print0 | xargs -0 md5sum > /checksums_backup.md5
+* read/write dstructive test
+badblocks -wsv /dev/sdd
+* firefox "cannot read profile" fix
+sudo chown -R user:user .cache/mozilla/
+* upgrade ubuntu system
+apt-get install update-manager-core
+do-release-upgrade
+
+conf: /etc/update-manager/release-upgrades
+* get UUID of ext filesystem
+blkid /dev/sda1
+* stop dmesg spilling in console
+sudo dmesg -n 1
+* get BIOS version
+cat /sys/class/dmi/id/bios_version
+* stop process
+kill -SIGSTOP
+* Show fps counter chromium
+  --show-fps-counter
+* extract package from system
+dpkg-repack
