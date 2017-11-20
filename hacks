@@ -222,3 +222,12 @@ kill -SIGSTOP
   --show-fps-counter
 * extract package from system
 dpkg-repack
+* sbcl disable debugger from inside
+(defun debug-ignore (c h) (declare (ignore h)) (print c) (abort))
+(setf *debugger-hook* #'debug-ignore)
+* execute sexp in emacs
+go to end of sexp and hit C-x e
+* elisp insert some formatted text in a loop 
+(loop for key from 0 below 10
+      do (insert (format "bakabaka %d desu \n" key)))
+
