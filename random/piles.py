@@ -33,7 +33,7 @@ print(split_pile([1]*12))
 print(split_pile([6,3,8,2,3,2,1,1]))
 print(split_pile([14,8,6]))
 print(split_pile([5,10,4,1]))
-print(split_pile([5,11,2,3,5,4,1]))
+print(split_pile([5,11,2,3,5,4,1,1]))
 print(split_pile([1,1,1,3,4]))
 
 
