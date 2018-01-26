@@ -231,3 +231,9 @@ go to end of sexp and hit C-x C-e
 (loop for key from 0 below 10
       do (insert (format "bakabaka %d desu \n" key)))
 
+* execute program with gdb, go to start, step opcode by opcode 
+use: https://github.com/cyrus-and/gdb-dashboard
+gdb <program>
+break _start
+run
+si
