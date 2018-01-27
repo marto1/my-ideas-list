@@ -1,4 +1,5 @@
 ############################# NEAR FUTURE ############################# 
+gdb interactive opcode inject(view register/flag changes etc.)
 tool to download images from search keyword(with multiple backends preferably)
 select and extract text with image processing from selection
 pattern finder for forth source code
