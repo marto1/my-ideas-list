@@ -234,6 +234,11 @@ go to end of sexp and hit C-x C-e
 * execute program with gdb, go to start, step opcode by opcode 
 use: https://github.com/cyrus-and/gdb-dashboard
 gdb <program>
+
 break _start
 run
 si
+
+* scan gmail for free stuff
+giveaway category:promotions
+free category:promotions
