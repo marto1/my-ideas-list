@@ -242,3 +242,7 @@ si
 * scan gmail for free stuff
 giveaway category:promotions
 free category:promotions
+* list apt manifest 
+apt list --installed
+* copy filesystem from place to place
+rsync -avxHAX --progress / /new-disk/
