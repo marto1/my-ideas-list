@@ -8,7 +8,6 @@ static analysis tool that shows(colors in) repeating sections of code
 a database with how much things take to compute on average.
 auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
 scrape some "how to..." sites and add to hacks.
-simple text viewer with basic formatting for touch screen.
 cloning of running systems with hash caching(is that implemented in rsync kinda already?)
 command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
 capture drawing library calls from browsers.(ltrace!?)
@@ -28,17 +27,15 @@ modify "sl" program to be a truck with a label "religion of peace"
 (and running people)
 
 ############################# WILD ############################# 
+diagram generation language that is not painfull to use.
 how to prove something computes?
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
 js deobfuscator that actually does something - at least constant replacement (tools for debugging, really, they all suck currently)
 HOMM(VCMI) interactive cli
 data tresure hunt generator - with clues for next one 
-As the question Why? is fundamental to science there should be a quick way(in Firefox for example) to ask it when a statement is made.
-For example: Go to Water wiki page -> "Water is widely used in chemical reactions as a solvent" -> "ask" why -> get statistics and verification in an orthogonal way.
 Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
 build kindle-like reader
-diagram generation language that is not painfull to use.
 byte code as interface to relational databases 
 get the code for the "stack overflow autocompletion", combine it with dash repos and make a standalone tool for browsing docs.
 soil prototyper - a device that can control the enviroment of soil so that it can come up with recepies for transforming bad soil to good soil
