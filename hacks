@@ -153,11 +153,6 @@ tail -1
 cut -d'       ' -f 1
 * remove leftover packages
 tar -zcvf archive-name.tar.gz directory-name
-* Virtual monitor/server
-apt-get install xvfb
-Xvfb -shmem -screen 0 1280x1024x24
-DISPLAY=:0 xdpyinfo
-^verify
 * Diff two directories recursively
 diff -rq dir1 dir2
 
@@ -246,3 +241,12 @@ free category:promotions
 apt list --installed
 * copy filesystem from place to place
 rsync -avxHAX --progress / /new-disk/
+* show to which package a file belongs to
+dpkg -S /bin/ls
+* search repos for file and package it belongs to
+apt-file update
+apt-file find htop
+* good optimization flags for x86_64
+-m64 -O3 -fomit-frame-pointer -funroll-loops -fomit-frame-pointer
+-march=native -mtune=native
+
