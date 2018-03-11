@@ -250,3 +250,8 @@ apt-file find htop
 -m64 -O3 -fomit-frame-pointer -funroll-loops -fomit-frame-pointer
 -march=native -mtune=native
 
+* running 64 bit UEFI qemu with OVMF and ssh port forwarded
+qemu-system-x86_64 -L . -m 1024 -hda /dev/sdb -localtime \
+-net nic,model=rtl8139 \
+-net user,id=mynet0,net=192.168.76.0/24,dhcpstart=192.168.76.9,hostfwd=tcp::60022-:22 \
+-soundhw ac97 -usb -usbdevice tablet
