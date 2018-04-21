@@ -26,10 +26,9 @@ html selection tool - select html on pages and copy it somewhere
 wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
 modify "sl" program to be a truck with a label "religion of peace"
 (and running people)
-
 ############################# WILD ############################# 
 usb to sd adapter - gets recognized by slave device as sd card but is accesible and rewritable from usb host side
-diagram generation language that is not painfull to use.
+diagram generation language that is not painfull to use.(https://github.com/knsv/mermaid??)
 how to prove something computes?
 workflow profiler - extract patterns in working with computers.
 debug msp430 usb controller
