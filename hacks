@@ -255,3 +255,17 @@ qemu-system-x86_64 -L . -m 1024 -hda /dev/sdb -localtime \
 -net nic,model=rtl8139 \
 -net user,id=mynet0,net=192.168.76.0/24,dhcpstart=192.168.76.9,hostfwd=tcp::60022-:22 \
 -soundhw ac97 -usb -usbdevice tablet
+* ldd on windows exe
+objdump -p *.exe | grep -F 'DLL Name:'
+* reset usb device
+echo 0 > /sys/bus/usb/devices/1-4.6/authorized
+echo 1 > /sys/bus/usb/devices/1-4.6/authorized
+* upgrade a specific package
+apt-get install --only-upgrade build-essential
+* download blob video
+in firefox
+inspect element
+network
+play video
+click (large) octet-stream request
+use the link to download .ts stream
