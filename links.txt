@@ -1,0 +1,16 @@
+https://www.investopedia.com/terms/c/cost-benefitanalysis.asp
+https://github.com/projectblacklight/blacklight/wiki
+https://github.com/j4p3/strimpack
+https://en.wikipedia.org/wiki/FTL%3A_Faster_Than_Light
+https://github.com/hendricius/the-bread-code/blob/master/basics/basic-sour-dough.md
+https://www.youtube.com/watch?v=sUIcCyPOA30
+https://github.com/Tapsa/genieutils
+https://www.heise.de/make/artikel/Einfacher-Ultraschall-Levitationsapparat-4022505.html
+https://orgmode.org/worg/org-contrib/babel/intro.html
+https://ralimtek.com/raspberry_pi_secondary_sd_card/
+https://blogs.msdn.microsoft.com/ashleyf/2013/09/21/chuck-moores-creations/
+https://lgdb.org/games
+https://libregamewiki.org/Main_Page
+https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
+https://www.dynacont.net/documentation/linux/Useful_SystemD_commands/
+http://www.madore.org/~david/linux/iTCO-wdt-test.html

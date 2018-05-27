@@ -269,3 +269,9 @@ network
 play video
 click (large) octet-stream request
 use the link to download .ts stream
+* firefox search bar tricks
+ ^ for matches in your browsing history.
+ * for matches in your bookmarks.
+ % for matches in your currently open tabs.
+ # for matches in page titles.
+ @ for matches in web addresses.
