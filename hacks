@@ -275,3 +275,5 @@ use the link to download .ts stream
  % for matches in your currently open tabs.
  # for matches in page titles.
  @ for matches in web addresses.
+* insert shell command in emacs
+C-u M-! <shell-command>
