@@ -277,3 +277,10 @@ use the link to download .ts stream
  @ for matches in web addresses.
 * insert shell command in emacs
 C-u M-! <shell-command>
+* virtualenv create and activate
+e="testenv"
+virtualenv $e
+cd $e/bin
+source activate
+* exit virtualenv
+deactivate
