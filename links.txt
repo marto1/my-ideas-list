@@ -19,3 +19,8 @@ https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
 https://www.dynacont.net/documentation/linux/Useful_SystemD_commands/
 http://www.madore.org/~david/linux/iTCO-wdt-test.html
 http://recepti.gotvach.bg/r-8882-%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%BE_%D1%82%D0%B5%D1%81%D1%82%D0%BE_%D0%B7%D0%B0_%D0%BF%D0%B8%D1%86%D0%B0
+https://en.wikipedia.org/wiki/Request_for_proposal
+https://webglfundamentals.org/
+https://help.github.com/articles/search-engine-optimization-for-github-pages/
+https://youtu.be/u02tycroA30?t=22s
+https://github.com/hayamiz/twittering-mode/tree/master
