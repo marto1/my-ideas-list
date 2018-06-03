@@ -24,3 +24,6 @@ https://webglfundamentals.org/
 https://help.github.com/articles/search-engine-optimization-for-github-pages/
 https://youtu.be/u02tycroA30?t=22s
 https://github.com/hayamiz/twittering-mode/tree/master
+https://en.wikipedia.org/wiki/The_Three_Types_of_Legitimate_Rule
+https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law
+
