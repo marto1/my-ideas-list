@@ -34,3 +34,4 @@ https://hackaday.com/2018/06/07/battleships-over-bgp/
 https://diem25.org/faces-of-democratic-deficit/
 https://arxiv.org/pdf/0907.0455.pdf
 https://www.youtube.com/watch?v=RU_GBcdxT84
+http://jeffe.cs.illinois.edu/open/randompoly.html
