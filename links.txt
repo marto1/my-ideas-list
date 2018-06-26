@@ -36,3 +36,4 @@ https://arxiv.org/pdf/0907.0455.pdf
 https://www.youtube.com/watch?v=RU_GBcdxT84
 http://jeffe.cs.illinois.edu/open/randompoly.html
 https://oeis.org/
+http://www.1001recepti.com/recipe/?recipe_id=2541-pile-frikase-klasicheska-recepta
