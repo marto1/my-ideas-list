@@ -284,3 +284,8 @@ cd $e/bin
 source activate
 * exit virtualenv
 deactivate
+* docker stop/rm containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+* docker delete dangling images
+docker rmi $(docker images -f "dangling=true" -q)
