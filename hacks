@@ -289,3 +289,5 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 * docker delete dangling images
 docker rmi $(docker images -f "dangling=true" -q)
+* docker hub get docker file
+https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
