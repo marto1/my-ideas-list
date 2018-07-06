@@ -25,6 +25,14 @@
 (setq c-basic-offset 4)                  ;; Default is 2
 (setq c-indent-level 4)                  ;; Default is 2
 
+(defun python-check-current ()
+  (interactive)
+  (python-check (concat python-check-command " " (buffer-file-name))))
+
+
+(global-set-key (kbd "C-c C-e")
+		'python-check-current)
+
 ;; Wrap with chars
 (global-set-key (kbd "M-[") 'insert-pair)
 (global-set-key (kbd "M-{") 'insert-pair)

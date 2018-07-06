@@ -284,6 +284,10 @@ cd $e/bin
 source activate
 * exit virtualenv
 deactivate
+* python change directory
+import os
+
+os.chdir(path)
 * docker stop/rm containers
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
