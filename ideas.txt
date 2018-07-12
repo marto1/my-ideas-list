@@ -1,6 +1,5 @@
 ############################# NEAR FUTURE #############################
 simple css3 animations
-random bounded polygon variations(possibly with area calculation)
 AoE tech tree 1 to 1 view in html
 tool to download images from search keyword(with multiple backends preferably)
 select and extract text with image processing from selection
