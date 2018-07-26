@@ -295,3 +295,5 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -f "dangling=true" -q)
 * docker hub get docker file
 https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
+* split flac in cue
+shnsplit -f file.cue -t %n-%t -o flac file.flac
