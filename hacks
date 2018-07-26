@@ -1,4 +1,4 @@
-* Take a snippet from a video
+* take a snippet from a video
 ffmpeg  -ss 00:11:07 -i <url> -t 00:00:20 -async 1 -strict -2 <target>
 * loseless screen grab, conv after
 ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -qscale 0.0001 -vcodec huffyuv -acodec libmp3lame grab.avi
@@ -20,11 +20,11 @@ unxz
 
 */5 * * * * sudo /sbin/reboot
 
-* Get Xorg version
+* get Xorg version
 
 X -version
 
-* Get software version package - ubuntu
+* get software version package - ubuntu
 
 sudo apt-cache show libc6
 
@@ -43,12 +43,12 @@ append local-name remote-name
 bye
 EOF
 
-* Change gateway over ssh
+* change gateway over ssh
 route -n
 route del default && route add default gw IP ppp0 #DANGEROUS 
 * ISO 8601 format date
 date --iso-8601
-* CHECK TCP connection to address
+* check TCP connection to address
 import socket
 TCP_IP = IP
 TCP_PORT = port
@@ -56,20 +56,16 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))
 s.close()
 
-* Resolve DNS python
+* resolve DNS python
 import socket
 data = socket.gethostbyname_ex("google.com")
 print data
-* Default language env variable
+* default language env variable
 
 LANG=C -> default language
 
 * manipulating structured text data
 https://github.com/dbohdan/structured-text-tools
-* emacs - replace on yank
-(delete-selection-mode 1)
-* emacs - clear kill ring
-(setq kill-ring nil)
 * python - encode/decode b64
 from base64 import b64encode, b64decode
 b64encode(s[, altchars])
@@ -90,7 +86,7 @@ grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
 replaces all letters with dots
 * remove lines from one file which are in another
 grep -F -v -x -f uhashes.log hashes.log | wc -l
-* Get not-installed-package deb links
+* get not-installed-package deb links
 sudo apt-get install --yes --no-download --reinstall --print-uris xdotool
 
 out:
@@ -124,24 +120,24 @@ DISPLAY=:0.0 xrandr -q
 qemu-system-i386 -net nic,model=rtl8139 -net user -m 512M -boot order=d -drive file=NAME.img,format=raw
 * create empty image
 fallocate -l 1G test.img
-* Show top five CPU consuming processes
+* show top five CPU consuming processes
 ps aux | sort -rk 3,3 | head -n 6
 * exclude grepping self from ps au
 xps aux | grep "[f]nord"
-* List package dependencies
+* list package dependencies
 apt-cache depends python
 * SOCKS proxy using tunnel
 ssh -N -D 2001 -p port username@servername
 * tar.gz folder
 tar -zcvf archive-name.tar.gz directory-name
-* Virtual monitor/server
+* virtual monitor/server
 apt-get install xvfb
 Xvfb -shmem -screen 0 1280x1024x24
 DISPLAY=:0 xdpyinfo
 ^verify
-* Diff two directories recursively
+* diff two directories recursively
 diff -rq dir1 dir2
-* See all userland processes
+* see all userland processes
  ps a --ppid 2 -p 2 --deselect
 * scan for wifi networks
 sudo iwlist wlan0 scan
@@ -153,10 +149,10 @@ tail -1
 cut -d'       ' -f 1
 * remove leftover packages
 tar -zcvf archive-name.tar.gz directory-name
-* Diff two directories recursively
+* diff two directories recursively
 diff -rq dir1 dir2
 
-* See all userland processes
+* see all userland processes
  ps a --ppid 2 -p 2 --deselect
 * scan for wifi networks
 sudo iwlist wlan0 scan
@@ -213,15 +209,13 @@ sudo dmesg -n 1
 cat /sys/class/dmi/id/bios_version
 * stop process
 kill -SIGSTOP
-* Show fps counter chromium
+* show fps counter chromium
   --show-fps-counter
 * extract package from system
 dpkg-repack
-* sbcl disable debugger from inside
+* SBCL disable debugger from inside
 (defun debug-ignore (c h) (declare (ignore h)) (print c) (abort))
 (setf *debugger-hook* #'debug-ignore)
-* emacs execute sexp in 
-go to end of sexp and hit C-x C-e
 * elisp insert some formatted text in a loop 
 (loop for key from 0 below 10
       do (insert (format "bakabaka %d desu \n" key)))
@@ -275,8 +269,6 @@ use the link to download .ts stream
  % for matches in your currently open tabs.
  # for matches in page titles.
  @ for matches in web addresses.
-* emacs insert shell command
-C-u M-! <shell-command>
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
@@ -288,6 +280,8 @@ deactivate
 import os
 
 os.chdir(path)
+* split flac in cue
+shnsplit -f file.cue -t %n-%t -o flac file.flac
 * docker stop/rm containers
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
@@ -295,9 +289,15 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -f "dangling=true" -q)
 * docker hub get docker file
 https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
-* split flac in cue
-shnsplit -f file.cue -t %n-%t -o flac file.flac
+* emacs insert shell command
+C-u M-! <shell-command>
 * emacs pretty print xml
 M-x sgml-mode M-x sgml-pretty-print
 * emacs reload file
 revert-file
+* emacs execute sexp in 
+go to end of sexp and hit C-x C-e
+* emacs replace on yank
+(delete-selection-mode 1)
+* emacs clear kill ring
+(setq kill-ring nil)
