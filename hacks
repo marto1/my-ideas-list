@@ -220,7 +220,7 @@ dpkg-repack
 * sbcl disable debugger from inside
 (defun debug-ignore (c h) (declare (ignore h)) (print c) (abort))
 (setf *debugger-hook* #'debug-ignore)
-* execute sexp in emacs
+* emacs execute sexp in 
 go to end of sexp and hit C-x C-e
 * elisp insert some formatted text in a loop 
 (loop for key from 0 below 10
@@ -275,7 +275,7 @@ use the link to download .ts stream
  % for matches in your currently open tabs.
  # for matches in page titles.
  @ for matches in web addresses.
-* insert shell command in emacs
+* emacs insert shell command
 C-u M-! <shell-command>
 * virtualenv create and activate
 e="testenv"
@@ -297,3 +297,7 @@ docker rmi $(docker images -f "dangling=true" -q)
 https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
 * split flac in cue
 shnsplit -f file.cue -t %n-%t -o flac file.flac
+* emacs pretty print xml
+M-x sgml-mode M-x sgml-pretty-print
+* emacs reload file
+revert-file
