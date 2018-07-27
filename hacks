@@ -5,17 +5,11 @@ ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -qscale 0.000
 ffmpeg -i grab.avi output.webm
 * lossy screen grab
 ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -threads 4 -y 1.webm
-* python wheel build/register/upload chain
-python setup.py bdist_wheel --universal
-twine register dist/*
-twine upload dist/*
 * convert list of timestamps to dates
 grep -F 'quit' bla.txt | cut -f2 -d" " > new.txt #list of timestamps
 while read in; do date -d @"$in"; done < new.txt
-
 * uncompress .xz files
 unxz
-
 * reboot every 5th minute
 
 */5 * * * * sudo /sbin/reboot
@@ -56,22 +50,12 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))
 s.close()
 
-* resolve DNS python
-import socket
-data = socket.gethostbyname_ex("google.com")
-print data
 * default language env variable
 
 LANG=C -> default language
 
 * manipulating structured text data
 https://github.com/dbohdan/structured-text-tools
-* python - encode/decode b64
-from base64 import b64encode, b64decode
-b64encode(s[, altchars])
-b64decode(s[, altchars])
-* python utf8
-# -*- coding: utf-8 -*-
 * rpi get temperature sensor
 cd /opt/vc/bin
 LD_LIBRARY_PATH=/opt/vc/lib ./vcgencmd measure_temp 
@@ -188,8 +172,6 @@ tar -czvf my_directory.tar.gz -C my_directory .
 import random
 s = range(5)
 random.shuffle(s)
-* get modules from python files 
-grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
 * checksum recursively
 find / -type f -print0 | xargs -0 md5sum > /checksums_backup.md5
 * read/write dstructive test
@@ -276,10 +258,6 @@ cd $e/bin
 source activate
 * exit virtualenv
 deactivate
-* python change directory
-import os
-
-os.chdir(path)
 * split flac in cue
 shnsplit -f file.cue -t %n-%t -o flac file.flac
 * docker stop/rm containers
@@ -301,3 +279,23 @@ go to end of sexp and hit C-x C-e
 (delete-selection-mode 1)
 * emacs clear kill ring
 (setq kill-ring nil)
+* python resolve DNS 
+import socket
+data = socket.gethostbyname_ex("google.com")
+print data
+* python wheel build/register/upload chain
+python setup.py bdist_wheel --universal
+twine register dist/*
+twine upload dist/*
+* python - encode/decode b64
+from base64 import b64encode, b64decode
+b64encode(s[, altchars])
+b64decode(s[, altchars])
+* python utf8
+# -*- coding: utf-8 -*-
+* python change directory
+import os
+
+os.chdir(path)
+* python get modules from files 
+grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
