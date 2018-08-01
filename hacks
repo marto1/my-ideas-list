@@ -279,6 +279,8 @@ go to end of sexp and hit C-x C-e
 (delete-selection-mode 1)
 * emacs clear kill ring
 (setq kill-ring nil)
+* emacs see git(vc) log
+vc-print-root-log
 * python resolve DNS 
 import socket
 data = socket.gethostbyname_ex("google.com")
@@ -299,3 +301,9 @@ import os
 os.chdir(path)
 * python get modules from files 
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
+* postgres list all dbs
+\list or \l
+* postgres list all tables in the current database
+\dt
+* postgres enable list view
+\x
