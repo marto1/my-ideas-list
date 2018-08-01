@@ -307,3 +307,7 @@ grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d
 \dt
 * postgres enable list view
 \x
+* git interactive rebase - amend author
+git rebase -i -p <commit before last one that has to be edited>
+git commit --amend --author "author <email>" --no-edit
+git rebase --continue
