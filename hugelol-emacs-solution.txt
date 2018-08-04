@@ -1,4 +1,4 @@
-initial plan: 
+initial plan:
 	hugelol/hiddenlol scraper -> file -> live update emacs -> show embedded post
 
 ended up:
@@ -6,10 +6,10 @@ ended up:
       hidden doesn't have that - manual fetching will be needed #TODO
       no idea about hugereaction, etc. #TODO
       could be useful to make it fetch from similar webservices #TODO
-      w3m was not good enough. 
+      w3m was not good enough.
       add limit to scraper #TODO
       ideal case scenario - download each X seconds -> buffer to some bash thing -> render to emacs
-            	 	    ^implemented    	       ^no idea                     ^ (╥_╥) implemented
-			    			       	   			    but very buggy still
+			    ^implemented	       ^no idea                     ^ (╥_╥) implemented
+										    but very buggy still
 										    #TODO doesn't support multiple windows
 										    #TODO is not a mode still

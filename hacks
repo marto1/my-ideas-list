@@ -39,7 +39,7 @@ EOF
 
 * change gateway over ssh
 route -n
-route del default && route add default gw IP ppp0 #DANGEROUS 
+route del default && route add default gw IP ppp0 #DANGEROUS
 * ISO 8601 format date
 date --iso-8601
 * check TCP connection to address
@@ -58,12 +58,12 @@ LANG=C -> default language
 https://github.com/dbohdan/structured-text-tools
 * rpi get temperature sensor
 cd /opt/vc/bin
-LD_LIBRARY_PATH=/opt/vc/lib ./vcgencmd measure_temp 
-* show duplicates in first column 
+LD_LIBRARY_PATH=/opt/vc/lib ./vcgencmd measure_temp
+* show duplicates in first column
 awk '{print $1}' hashes.log | sort | uniq -cd
 * disable camera
 sudo modprobe -r uvcvideo
-* get a list of offending ECDSA keys from a file 
+* get a list of offending ECDSA keys from a file
 grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
 * replace each letter with a symbol in regex
 \w -> .
@@ -198,11 +198,11 @@ dpkg-repack
 * SBCL disable debugger from inside
 (defun debug-ignore (c h) (declare (ignore h)) (print c) (abort))
 (setf *debugger-hook* #'debug-ignore)
-* elisp insert some formatted text in a loop 
+* elisp insert some formatted text in a loop
 (loop for key from 0 below 10
       do (insert (format "bakabaka %d desu \n" key)))
 
-* execute program with gdb, go to start, step opcode by opcode 
+* execute program with gdb, go to start, step opcode by opcode
 use: https://github.com/cyrus-and/gdb-dashboard
 gdb <program>
 
@@ -213,7 +213,7 @@ si
 * scan gmail for free stuff
 giveaway category:promotions
 free category:promotions
-* list apt manifest 
+* list apt manifest
 apt list --installed
 * copy filesystem from place to place
 rsync -avxHAX --progress / /new-disk/
@@ -273,7 +273,7 @@ C-u M-! <shell-command>
 M-x sgml-mode M-x sgml-pretty-print
 * emacs reload file
 revert-file
-* emacs execute sexp in 
+* emacs execute sexp in
 go to end of sexp and hit C-x C-e
 * emacs replace on yank
 (delete-selection-mode 1)
@@ -281,7 +281,7 @@ go to end of sexp and hit C-x C-e
 (setq kill-ring nil)
 * emacs see git(vc) log
 vc-print-root-log
-* python resolve DNS 
+* python resolve DNS
 import socket
 data = socket.gethostbyname_ex("google.com")
 print data
@@ -299,7 +299,7 @@ b64decode(s[, altchars])
 import os
 
 os.chdir(path)
-* python get modules from files 
+* python get modules from files
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
 * postgres list all dbs
 \list or \l

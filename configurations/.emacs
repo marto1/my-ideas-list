@@ -74,7 +74,7 @@
 
 
 (add-to-list 'load-path
-              "~/.emacs.d/yasnippet")
+	      "~/.emacs.d/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
 (global-set-key "\M-W" 'yas-insert-snippet)
@@ -100,7 +100,7 @@
  '(python-check-command "pychecker.sh")
  '(safe-local-variable-values (quote ((test-case-name . twisted\.test\.test_tcp) (test-case-name . twisted\.test\.test_udp)))))
 
-;; ;; ;; Real lisp mode 
+;; ;; ;; Real lisp mode
 (setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
 (require 'slime-autoloads)
 (slime-setup)
@@ -120,19 +120,19 @@
       "Fix a little bug if the point is not at the prompt when you do
     C-c C-[rc]"
       (let ((oldpoint (with-current-buffer (process-buffer (python-proc)) (point)))
-    	(oldinput
-    	 (with-current-buffer (process-buffer (python-proc))
-    	   (goto-char (point-max))
-    	   ;; Do C-c C-u, but without modifying the kill ring:
-    	   (let ((pmark (process-mark (get-buffer-process (current-buffer)))))
-    	     (when (> (point) (marker-position pmark))
-    	       (let ((ret (buffer-substring pmark (point))))
-    		 (delete-region pmark (point))
-    		 ret))))))
-        ad-do-it
-        (with-current-buffer (process-buffer (python-proc))
-          (when oldinput (insert oldinput))
-          (goto-char oldpoint))))
+	(oldinput
+	 (with-current-buffer (process-buffer (python-proc))
+	   (goto-char (point-max))
+	   ;; Do C-c C-u, but without modifying the kill ring:
+	   (let ((pmark (process-mark (get-buffer-process (current-buffer)))))
+	     (when (> (point) (marker-position pmark))
+	       (let ((ret (buffer-substring pmark (point))))
+		 (delete-region pmark (point))
+		 ret))))))
+	ad-do-it
+	(with-current-buffer (process-buffer (python-proc))
+	  (when oldinput (insert oldinput))
+	  (goto-char oldpoint))))
     (ad-enable-advice 'python-send-region 'around 'advice-python-send-region-goto-end)
     (ad-activate 'python-send-region)
 
@@ -158,7 +158,7 @@
 (add-to-list 'load-path (concat my-lisp-dir "w3m"))
 
 (require 'w3m-load)
-(require 'w3m) 
+(require 'w3m)
 
 (setq browse-url-browser-function 'w3m-browse-url)
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
@@ -170,13 +170,13 @@
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 (add-hook 'eshell-preoutput-filter-functions
-           'ansi-color-filter-apply)
+	   'ansi-color-filter-apply)
 
 
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
 (add-hook 'term-mode-hook (lambda()
-                (yas-minor-mode -1)))
+		(yas-minor-mode -1)))
 
 (setq shr-external-browser "firefox")
 

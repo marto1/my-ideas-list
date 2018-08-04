@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Set position of slider in VLC to <seconds> , first track always selected 
+Set position of slider in VLC to <seconds> , first track always selected
 #FIXME should select current track
 
 Enable D-BUS in VLC:
@@ -9,7 +9,7 @@ Enable D-BUS in VLC:
 import dbus
 import sys
 
-### settings 
+### settings
 PIFACE = 'org.mpris.MediaPlayer2.Player'
 TIFACE = 'org.mpris.MediaPlayer2.TrackList'
 bus = dbus.SessionBus()

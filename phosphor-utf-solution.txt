@@ -1,10 +1,9 @@
 utf-8 in xscreensaver/phosphor should work in latest version, from phosphor.c:
-            case '%': /* Select charset */
-              /* @: Select default (ISO 646 / ISO 8859-1)
-                 G: Select UTF-8
-                 8: Select UTF-8 (obsolete)
+	    case '%': /* Select charset */
+	      /* @: Select default (ISO 646 / ISO 8859-1)
+		 G: Select UTF-8
+		 8: Select UTF-8 (obsolete)
 
-                 We can just ignore this and always process UTF-8, I think?
-                 We must still catch the last byte, though.
-               */
-
+		 We can just ignore this and always process UTF-8, I think?
+		 We must still catch the last byte, though.
+	       */
