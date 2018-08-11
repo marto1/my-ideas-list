@@ -258,6 +258,8 @@ cd $e/bin
 source activate
 * exit virtualenv
 deactivate
+* python venv create virtualenv
+python3 -m venv /path/to/new/virtual/environment
 * split flac in cue
 shnsplit -f file.cue -t %n-%t -o flac file.flac
 * docker stop/rm containers
