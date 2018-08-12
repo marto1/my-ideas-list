@@ -251,15 +251,8 @@ use the link to download .ts stream
  % for matches in your currently open tabs.
  # for matches in page titles.
  @ for matches in web addresses.
-* virtualenv create and activate
-e="testenv"
-virtualenv $e
-cd $e/bin
-source activate
 * exit virtualenv
 deactivate
-* python venv create virtualenv
-python3 -m venv /path/to/new/virtual/environment
 * split flac in cue
 shnsplit -f file.cue -t %n-%t -o flac file.flac
 * docker stop/rm containers
@@ -269,6 +262,8 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -f "dangling=true" -q)
 * docker hub get docker file
 https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
+* docker clean exited containers
+docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty docker rm
 * emacs insert shell command
 C-u M-! <shell-command>
 * emacs pretty print xml
@@ -303,6 +298,13 @@ import os
 os.chdir(path)
 * python get modules from files
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
+* python venv create virtualenv
+python3 -m venv /path/to/new/virtual/environment
+* virtualenv create and activate
+e="testenv"
+virtualenv $e
+cd $e/bin
+source activate
 * postgres list all dbs
 \list or \l
 * postgres list all tables in the current database
@@ -313,3 +315,5 @@ grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
 git rebase --continue
+* bash fail on error
+set -e
