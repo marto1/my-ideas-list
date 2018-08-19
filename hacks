@@ -326,3 +326,5 @@ disable 'test' #to configure table
 enable 'test'
 drop 'test'
 count 'test'
+* hbase list all tables
+list
