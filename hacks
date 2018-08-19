@@ -97,7 +97,6 @@ fallocate -l 1G test.img
 ps aux | sort -rk 3,3 | head -n 6
 * exclude grepping self from ps au
 xps aux | grep "[f]nord"
-
 * SOCKS proxy using tunnel
 ssh -N -D 2001 -p port username@servername
 * tar.gz folder
@@ -284,7 +283,7 @@ git commit --amend --author "author <email>" --no-edit
 git rebase --continue
 * bash fail on error
 set -e
-* apt add key to 
+* apt add key to
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3C962022012520A0
 * apt upgrade a specific package
 apt-get install --only-upgrade build-essential
