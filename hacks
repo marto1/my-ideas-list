@@ -11,19 +11,13 @@ while read in; do date -d @"$in"; done < new.txt
 * uncompress .xz files
 unxz
 * reboot every 5th minute
-
 */5 * * * * sudo /sbin/reboot
-
 * get Xorg version
-
 X -version
-
 * fglrx dependencies
-
 debhelper dh-modaliases execstack dpkg-dev dpkg-dev dkms xserver-xorg-dev (only 64 bit - lib32gcc1)
 * tar compress directory
 tar -zcvf archive-name.tar.gz directory-name
-
 * ftp upload(from secure mobile)
 ftp -inv IP <<EOF
 user USR PASS
@@ -32,7 +26,6 @@ cd directory
 append local-name remote-name
 bye
 EOF
-
 * change gateway over ssh
 route -n
 route del default && route add default gw IP ppp0 #DANGEROUS
@@ -45,11 +38,8 @@ TCP_PORT = port
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((TCP_IP, TCP_PORT))
 s.close()
-
 * default language env variable
-
 LANG=C -> default language
-
 * manipulating structured text data
 https://github.com/dbohdan/structured-text-tools
 * rpi get temperature sensor
@@ -68,16 +58,15 @@ replaces all letters with dots
 grep -F -v -x -f uhashes.log hashes.log | wc -l
 * compress .xz files
 xz -k -9 <file>
-
 * launch xterm with geometry
 DISPLAY=:0.0 xterm -geometry 80x24+10+10
 * test VW
- DISPLAY=:0.0 glxgears -fullscreen
+DISPLAY=:0.0 glxgears -fullscreen
 * arandr remote
 ssh -X blabla
 arandr --randr-display :0.0
 * configure for 32 bit on 64 bit host
-  ./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
+./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
 * manually set window to a resolution
 DISPLAY=:0.0 wmctrl -r chrome -b toggle,fullscreen
 DISPLAY=:0.0 wmctrl -r chrome -e 0,0,0,1080,3840
@@ -96,7 +85,7 @@ fallocate -l 1G test.img
 * show top five CPU consuming processes
 ps aux | sort -rk 3,3 | head -n 6
 * exclude grepping self from ps au
-xps aux | grep "[f]nord"
+ps aux | grep "[f]nord"
 * SOCKS proxy using tunnel
 ssh -N -D 2001 -p port username@servername
 * tar.gz folder
@@ -104,7 +93,7 @@ tar -zcvf archive-name.tar.gz directory-name
 * diff two directories recursively
 diff -rq dir1 dir2
 * see all userland processes
- ps a --ppid 2 -p 2 --deselect
+ps a --ppid 2 -p 2 --deselect
 * scan for wifi networks
 sudo iwlist wlan0 scan
 * chrome task manager
@@ -117,9 +106,8 @@ cut -d'       ' -f 1
 tar -zcvf archive-name.tar.gz directory-name
 * diff two directories recursively
 diff -rq dir1 dir2
-
 * see all userland processes
- ps a --ppid 2 -p 2 --deselect
+ps a --ppid 2 -p 2 --deselect
 * scan for wifi networks
 sudo iwlist wlan0 scan
 * chrome task manager
@@ -165,7 +153,7 @@ cat /sys/class/dmi/id/bios_version
 * stop process
 kill -SIGSTOP
 * show fps counter chromium
-  --show-fps-counter
+--show-fps-counter
 * extract package from system
 dpkg-repack
 * SBCL disable debugger from inside
@@ -174,7 +162,6 @@ dpkg-repack
 * elisp insert some formatted text in a loop
 (loop for key from 0 below 10
       do (insert (format "bakabaka %d desu \n" key)))
-
 * execute program with gdb, go to start, step opcode by opcode
 use: https://github.com/cyrus-and/gdb-dashboard
 gdb <program>
@@ -182,7 +169,6 @@ gdb <program>
 break _start
 run
 si
-
 * scan gmail for free stuff
 giveaway category:promotions
 free category:promotions
@@ -193,7 +179,6 @@ dpkg -S /bin/ls
 * good optimization flags for x86_64
 -m64 -O3 -fomit-frame-pointer -funroll-loops -fomit-frame-pointer
 -march=native -mtune=native
-
 * running 64 bit UEFI qemu with OVMF and ssh port forwarded
 qemu-system-x86_64 -L . -m 1024 -hda /dev/sdb -localtime \
 -net nic,model=rtl8139 \
@@ -260,7 +245,6 @@ b64decode(s[, altchars])
 # -*- coding: utf-8 -*-
 * python change directory
 import os
-
 os.chdir(path)
 * python get modules from files
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
@@ -292,11 +276,9 @@ apt list --installed
 * apt search repos for file and package it belongs to
 apt-file update
 apt-file find htop
-
 * apt upgrade ubuntu system
 apt-get install update-manager-core
 do-release-upgrade
-
 conf: /etc/update-manager/release-upgrades
 * apt remove leftover packages
 sudo apt-get remove --purge $(sudo dpkg -l | grep "^rc" | awk '{print $2}' | tr '\n' ' ')
@@ -305,7 +287,6 @@ apt-get install xvfb
 Xvfb -shmem -screen 0 1280x1024x24
 DISPLAY=:0 xdpyinfo
 ^verify
-
 * apt list package dependencies
 apt-cache depends python
 * apt get software version package - ubuntu
