@@ -309,3 +309,23 @@ drop 'test'
 count 'test'
 * hbase list all tables
 list
+* schroot a jail
+sudo debootstrap --variant=buildd --arch amd64 xenial /mnt/apache/ http://de.archive.ubuntu.com/ubuntu/
+apt
+apt install nano
+
+in schroot.conf:
+[apache]
+description=Apache rewrite enviroment
+directory=/mnt/apache
+users=root
+root-groups=root
+
+schroot -c apache
+
+deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb http://de.archive.ubuntu.com/ubuntu/ xenial universe
+deb-src http://de.archive.ubuntu.com/ubuntu/ xenial universe
+deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb http://de.archive.ubuntu.com/ubuntu/ xenial multiverse
+deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
