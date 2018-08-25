@@ -217,6 +217,8 @@ https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
 docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty docker rm
 * docker get container ip
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+* docker good single user jupyterhub
+docker run jupyterhub/singleuser
 * emacs insert shell command
 C-u M-! <shell-command>
 * emacs pretty print xml
@@ -331,3 +333,5 @@ deb-src http://de.archive.ubuntu.com/ubuntu/ xenial universe
 deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates universe
 deb http://de.archive.ubuntu.com/ubuntu/ xenial multiverse
 deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+* number processes per user
+ps haux Ou | cut '-d ' -f1 | uniq -c

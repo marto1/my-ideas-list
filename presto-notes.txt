@@ -13,6 +13,9 @@ Hive Metastore Plugin - not supported
 
 https://github.com/prestodb/presto/issues/8980
 
+Ranger auth plugin for presto issue is active but
+nothing definate.
+
 
 - Row level data access protection capabilities
 
