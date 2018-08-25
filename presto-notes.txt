@@ -1,0 +1,23 @@
+                             !impersonation works here
+presto -> hive metadata -> hdfs
+
+
+https://prestodb.io/docs/current/connector/hive-security.html#impersonation-accessing-the-hive-metastore
+
+Presto does not currently support impersonating the end user when accessing the Hive metastore.
+
+https://issues.apache.org/jira/browse/RANGER-768
+
+Hive Metastore Plugin - not supported
+
+
+https://github.com/prestodb/presto/issues/8980
+
+
+- Row level data access protection capabilities
+
+We don’t have plans for this for Hive.  I suggest you use views for
+row level permissions.  If you have another data source that supports
+this, it might be possible.
+
+https://prestodb.io/docs/current/sql/grant.html
