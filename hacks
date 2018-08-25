@@ -215,6 +215,8 @@ docker rmi $(docker images -f "dangling=true" -q)
 https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
 * docker clean exited containers
 docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty docker rm
+* docker get container ip
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 * emacs insert shell command
 C-u M-! <shell-command>
 * emacs pretty print xml
