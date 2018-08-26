@@ -25,7 +25,7 @@ this, it might be possible.
 
 https://prestodb.io/docs/current/sql/grant.html
 
-==========================================================================
+=========================================================================
 postgres approach
 
 https://www.openscg.com/bigsql/hadoopfdw/
