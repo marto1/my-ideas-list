@@ -24,3 +24,8 @@ row level permissions.  If you have another data source that supports
 this, it might be possible.
 
 https://prestodb.io/docs/current/sql/grant.html
+
+==========================================================================
+postgres approach
+
+https://www.openscg.com/bigsql/hadoopfdw/
