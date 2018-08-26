@@ -254,6 +254,8 @@ os.chdir(path)
 grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d " " | sort | uniq
 * python venv create virtualenv
 python3 -m venv /path/to/new/virtual/environment
+* python trace function calls
+python3 -m trace --listfuncs traceit.py
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
