@@ -346,3 +346,5 @@ SET TBLPROPERTIES (
     'EXTERNAL'='FALSE');
 
 DROP TABLE external_hive_table;
+* airflow run dag from console
+airflow run dag_1 task_1 2018-8-27
