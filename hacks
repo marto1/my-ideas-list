@@ -335,3 +335,10 @@ deb http://de.archive.ubuntu.com/ubuntu/ xenial multiverse
 deb http://de.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
 * number processes per user
 ps haux Ou | cut '-d ' -f1 | uniq -c
+* hive drop external table with data
+ALTER TABLE
+    external_hive_table
+SET TBLPROPERTIES (
+    'EXTERNAL'='FALSE');
+
+DROP TABLE external_hive_table;
