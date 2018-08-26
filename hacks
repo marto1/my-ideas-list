@@ -256,6 +256,8 @@ grep -h "import " *.py | unexpand |  sed 's/import//' | sed 's/from.*//' | tr -d
 python3 -m venv /path/to/new/virtual/environment
 * python trace function calls
 python3 -m trace --listfuncs traceit.py
+* python trace statements
+python3 -m trace --trace traceit.py
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
