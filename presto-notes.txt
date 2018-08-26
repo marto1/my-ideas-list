@@ -29,3 +29,4 @@ https://prestodb.io/docs/current/sql/grant.html
 postgres approach
 
 https://www.openscg.com/bigsql/hadoopfdw/
+https://www.postgresql.org/docs/9.6/static/fdw-row-locking.html
