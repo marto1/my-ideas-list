@@ -49,3 +49,5 @@ https://en.wikipedia.org/wiki/Dieter_Rams#%22Good_design%22_principles
 https://www.youtube.com/watch?v=jFZHIPhmNTs&list=PLFn7fvIP7CbMun4daH24AZzX3r7ETT6aD
 https://stackoverflow.com/questions/17038414/difference-between-hive-internal-tables-and-external-tables#17038740
 https://robottini.altervista.org/cartesio-low-cost-cartesian-plotter-robot
+https://github.com/JonathonReinhart/staticx
+https://en.wikipedia.org/wiki/Mnemonic_peg_system

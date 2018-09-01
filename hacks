@@ -269,6 +269,15 @@ source activate
 \dt
 * postgres enable list view
 \x
+* postgres show table info(size, etc.)
+\dt+ table1
+* postgres top 5 biggest tables
+SELECT table_name
+,pg_relation_size(table_schema || '.' || table_name) as size
+FROM information_schema.tables
+WHERE table_schema NOT IN ('information_schema', 'pg_catalog')
+ORDER BY size DESC
+LIMIT 5;
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
