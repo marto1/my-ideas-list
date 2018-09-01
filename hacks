@@ -278,6 +278,8 @@ FROM information_schema.tables
 WHERE table_schema NOT IN ('information_schema', 'pg_catalog')
 ORDER BY size DESC
 LIMIT 5;
+* postgres get current settings
+SELECT name, setting, source FROM pg_settings;
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit

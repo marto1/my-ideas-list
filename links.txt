@@ -51,3 +51,4 @@ https://stackoverflow.com/questions/17038414/difference-between-hive-internal-ta
 https://robottini.altervista.org/cartesio-low-cost-cartesian-plotter-robot
 https://github.com/JonathonReinhart/staticx
 https://en.wikipedia.org/wiki/Mnemonic_peg_system
+https://www.postgresql.org/docs/9.6/static/kernel-resources.html
