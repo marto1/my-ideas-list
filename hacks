@@ -258,6 +258,8 @@ python3 -m venv /path/to/new/virtual/environment
 python3 -m trace --listfuncs traceit.py
 * python trace statements
 python3 -m trace --trace traceit.py
+* python convert notebook to python file
+jupyter nbconvert --to script notebook.ipynb
 * virtualenv create and activate
 e="testenv"
 virtualenv $e

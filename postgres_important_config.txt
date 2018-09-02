@@ -1,0 +1,7 @@
+postgres settings
+=================
+effective_io_concurrency
+max_worker_processes
+shared_buffers
+wal_buffers
+=================
