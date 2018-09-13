@@ -53,3 +53,4 @@ https://github.com/JonathonReinhart/staticx
 https://en.wikipedia.org/wiki/Mnemonic_peg_system
 https://www.postgresql.org/docs/9.6/static/kernel-resources.html
 https://www.ibm.com/support/knowledgecenter/SSEPGG_10.1.0/com.ibm.db2.luw.qb.server.doc/doc/t0008238.html
+http://nbviewer.jupyter.org/github/yankev/test/blob/master/plotlywidget_working2.ipynb
