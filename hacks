@@ -361,3 +361,9 @@ SET TBLPROPERTIES (
 DROP TABLE external_hive_table;
 * airflow run dag from console
 airflow run dag_1 task_1 2018-8-27
+* R read csv table
+mydata <- read.table("test.csv", header=TRUE, sep=",", row.names="id")
+* R list installed packages
+ip = as.data.frame(installed.packages()[,c(1,3:4)])
+ip = ip[is.na(ip$Priority),1:2,drop=FALSE]
+ip
