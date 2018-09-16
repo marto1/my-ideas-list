@@ -367,3 +367,10 @@ mydata <- read.table("test.csv", header=TRUE, sep=",", row.names="id")
 ip = as.data.frame(installed.packages()[,c(1,3:4)])
 ip = ip[is.na(ip$Priority),1:2,drop=FALSE]
 ip
+* R plotly plot
+btc_price <- read.table("btc_price.csv", header=F, sep=",")
+colnames(btc_price) <- c("date", "price")
+btc_price <- data.frame(as.Date(btc_price$date), btc_price$price)
+colnames(btc_price) <- c("date", "price")
+p <- plot_ly(x = btc_price$date, y= btc_price$price, mode = "lines")
+p
