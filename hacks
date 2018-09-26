@@ -374,3 +374,11 @@ btc_price <- data.frame(as.Date(btc_price$date), btc_price$price)
 colnames(btc_price) <- c("date", "price")
 p <- plot_ly(x = btc_price$date, y= btc_price$price, mode = "lines")
 p
+* R summary for most data types
+summary(data)
+* R get times out of a time series
+time(data)
+* R specify slice of frame
+data[c(107:365),]
+* R install package
+install.packages("mypackage")
