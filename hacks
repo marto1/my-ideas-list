@@ -282,6 +282,8 @@ ORDER BY size DESC
 LIMIT 5;
 * postgres get current settings
 SELECT name, setting, source FROM pg_settings;
+* postgres log prefix
+log_line_prefix = '%t:%r:%u@%d:[%p]:'
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
