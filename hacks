@@ -262,6 +262,8 @@ python3 -m trace --trace traceit.py
 jupyter nbconvert --to script notebook.ipynb
 * python check ssl trust store paths
 python -c "import ssl; print(ssl.get_default_verify_paths())"
+* python requests bundle to system ssl certs
+REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
