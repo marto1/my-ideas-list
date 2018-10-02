@@ -260,6 +260,8 @@ python3 -m trace --listfuncs traceit.py
 python3 -m trace --trace traceit.py
 * python convert notebook to python file
 jupyter nbconvert --to script notebook.ipynb
+* python check ssl trust store paths
+python -c "import ssl; print(ssl.get_default_verify_paths())"
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
