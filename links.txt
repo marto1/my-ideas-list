@@ -56,3 +56,4 @@ https://www.ibm.com/support/knowledgecenter/SSEPGG_10.1.0/com.ibm.db2.luw.qb.ser
 http://nbviewer.jupyter.org/github/yankev/test/blob/master/plotlywidget_working2.ipynb
 https://www.youtube.com/watch?v=Fq5EQBFLEC8
 http://www.databaseanswers.org/data_models/
+https://www.youtube.com/watch?v=KdvHGdd0NBU
