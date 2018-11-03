@@ -273,6 +273,8 @@ source activate
 \list or \l
 * postgres list all tables in the current database
 \dt
+* postgres list schemas in db
+\dn
 * postgres enable list view
 \x
 * postgres show table info(size, etc.)
@@ -288,6 +290,8 @@ LIMIT 5;
 SELECT name, setting, source FROM pg_settings;
 * postgres log prefix
 log_line_prefix = '%t:%r:%u@%d:[%p]:'
+* postgres list roles
+\du
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit

@@ -57,3 +57,4 @@ http://nbviewer.jupyter.org/github/yankev/test/blob/master/plotlywidget_working2
 https://www.youtube.com/watch?v=Fq5EQBFLEC8
 http://www.databaseanswers.org/data_models/
 https://www.youtube.com/watch?v=KdvHGdd0NBU
+https://www.youtube.com/watch?v=aP0Y1uAA-2Y
