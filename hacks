@@ -292,6 +292,8 @@ SELECT name, setting, source FROM pg_settings;
 log_line_prefix = '%t:%r:%u@%d:[%p]:'
 * postgres list roles
 \du
+* postgres superuser
+ALTER USER randomuser WITH SUPERUSER;
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
