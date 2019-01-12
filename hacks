@@ -294,6 +294,14 @@ log_line_prefix = '%t:%r:%u@%d:[%p]:'
 \du
 * postgres superuser
 ALTER USER randomuser WITH SUPERUSER;
+* postgres list constraints
+SELECT con.conname
+FROM pg_catalog.pg_constraint con
+INNER JOIN pg_catalog.pg_class rel
+ON rel.oid = con.conrelid
+INNER JOIN pg_catalog.pg_namespace nsp
+ON nsp.oid = connamespace
+WHERE nsp.nspname = 'schema name';
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
