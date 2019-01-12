@@ -264,6 +264,17 @@ jupyter nbconvert --to script notebook.ipynb
 python -c "import ssl; print(ssl.get_default_verify_paths())"
 * python requests bundle to system ssl certs
 REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+* python multiprocess utilization
+from multiprocessing import Pool
+
+def f(x):
+    while True: pass
+    return x*x
+
+if __name__ == '__main__':
+    NUM = 5
+    p = Pool(NUM)
+    print(p.map(f, [1]*NUM))
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
@@ -302,6 +313,23 @@ ON rel.oid = con.conrelid
 INNER JOIN pg_catalog.pg_namespace nsp
 ON nsp.oid = connamespace
 WHERE nsp.nspname = 'schema name';
+* postgres get column names from table
+SELECT column_name
+FROM information_schema.columns
+WHERE table_schema = 'your_schema'
+  AND table_name   = 'your_table';
+
+\d+ schema.table
+* postgres get triggers on schema
+SELECT distinct(trigger_name)
+FROM information_schema.triggers
+WHERE trigger_schema = 'MY_SCHEMA';
+
+SELECT distinct(event_object_table)
+FROM information_schema.triggers
+WHERE trigger_name = 'TRIGGER_NAME';
+* format sql query
+sqlformat --reindent --keywords upper --identifiers lower file.sql
 * git interactive rebase - amend author
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
@@ -402,6 +430,8 @@ time(data)
 data[c(107:365),]
 * R install package
 install.packages("mypackage")
+* R get package version
+packageVersion("RCurl")
 * radare2 cheatsheet
 s 0x0000 - go to 0
 pd 2 - print 2 instructions from current address
@@ -417,3 +447,11 @@ t* - list obj=type pairs
 tf - all function signitures
 ts - all loaded structs
 ih - headers (alias for iH)
+* get service processor ip
+sudo ipmitool lan print
+* kerberos check cache expiration date
+klist -c /tmp/krb5cc_1000
+* bacula get jobs
+sudo bacula_jobs --host myhost --set myhome
+* connecting to rdp
+xfreerdp -u myusername 10.10.10.1
