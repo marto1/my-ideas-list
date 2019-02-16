@@ -455,3 +455,9 @@ klist -c /tmp/krb5cc_1000
 sudo bacula_jobs --host myhost --set myhome
 * connecting to rdp
 xfreerdp -u myusername 10.10.10.1
+* measure performance program
+perf stat <program>
+perf stat -d <program> #detailed
+* Listing all currently known events:
+perf list
+
