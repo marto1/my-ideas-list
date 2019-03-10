@@ -1,11 +1,8 @@
 https://twitter.com/2DArray/status/1002273371160305667
-https://www.johnwdefeo.com/articles/why-i-write-letters-to-ceos
 https://charlesouweland.wordpress.com/co%E2%82%82-meter-from-prototype-to-meter-in-a-box/
 https://www.crypto51.app/
 https://www.investopedia.com/terms/c/cost-benefitanalysis.asp
 https://github.com/projectblacklight/blacklight/wiki
-https://github.com/j4p3/strimpack
-https://en.wikipedia.org/wiki/FTL%3A_Faster_Than_Light
 https://github.com/hendricius/the-bread-code/blob/master/basics/basic-sour-dough.md
 https://www.youtube.com/watch?v=sUIcCyPOA30
 https://github.com/Tapsa/genieutils
@@ -13,11 +10,9 @@ https://www.heise.de/make/artikel/Einfacher-Ultraschall-Levitationsapparat-40225
 https://orgmode.org/worg/org-contrib/babel/intro.html
 https://ralimtek.com/raspberry_pi_secondary_sd_card/
 https://blogs.msdn.microsoft.com/ashleyf/2013/09/21/chuck-moores-creations/
-https://lgdb.org/games
 https://libregamewiki.org/Main_Page
 https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
 https://www.dynacont.net/documentation/linux/Useful_SystemD_commands/
-http://www.madore.org/~david/linux/iTCO-wdt-test.html
 http://recepti.gotvach.bg/r-8882-%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D0%B0%D0%BD%D1%81%D0%BA%D0%BE_%D1%82%D0%B5%D1%81%D1%82%D0%BE_%D0%B7%D0%B0_%D0%BF%D0%B8%D1%86%D0%B0
 https://en.wikipedia.org/wiki/Request_for_proposal
 https://webglfundamentals.org/
@@ -53,7 +48,6 @@ https://github.com/JonathonReinhart/staticx
 https://en.wikipedia.org/wiki/Mnemonic_peg_system
 https://www.postgresql.org/docs/9.6/static/kernel-resources.html
 https://www.ibm.com/support/knowledgecenter/SSEPGG_10.1.0/com.ibm.db2.luw.qb.server.doc/doc/t0008238.html
-http://nbviewer.jupyter.org/github/yankev/test/blob/master/plotlywidget_working2.ipynb
 https://www.youtube.com/watch?v=Fq5EQBFLEC8
 http://www.databaseanswers.org/data_models/
 https://www.youtube.com/watch?v=KdvHGdd0NBU
@@ -65,4 +59,4 @@ https://youtu.be/7fdQJ5ry_NI?t=2463
 https://arxiv.org/pdf/1604.07746.pdf
 https://en.wikipedia.org/wiki/DTrace#Command_line_examples
 https://www.dwitter.net/
-
+http://yosefk.com/blog/its-done-in-hardware-so-its-cheap.html
