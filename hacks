@@ -460,4 +460,5 @@ perf stat <program>
 perf stat -d <program> #detailed
 * Listing all currently known events:
 perf list
-
+* Output 30 random lines from a file
+shuf -n 30 words3
