@@ -233,6 +233,8 @@ go to end of sexp and hit C-x C-e
 (setq kill-ring nil)
 * emacs see git(vc) log
 vc-print-root-log
+* emacs open new shell
+C-u M-x shell
 * python resolve DNS
 import socket
 data = socket.gethostbyname_ex("google.com")
