@@ -460,7 +460,11 @@ xfreerdp -u myusername 10.10.10.1
 * measure performance program
 perf stat <program>
 perf stat -d <program> #detailed
-* Listing all currently known events:
+* listing all currently known events:
 perf list
-* Output 30 random lines from a file
+* output 30 random lines from a file
 shuf -n 30 words3
+* convert folder of webms to mp4
+for f in *.webm; do
+    ffmpeg -i "$f" -acodec libmp3lame -ar 22050 "conv/$f.mp4"
+done
