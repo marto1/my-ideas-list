@@ -202,6 +202,8 @@ use the link to download .ts stream
  % for matches in your currently open tabs.
  # for matches in page titles.
  @ for matches in web addresses.
+* firefox disable addon signitures
+xpinstall.signatures.required
 * exit virtualenv
 deactivate
 * split flac in cue
