@@ -464,7 +464,7 @@ perf stat <program>
 perf stat -d <program> #detailed
 * listing all currently known events:
 perf list
-* output 30 random lines from a file
+* shuffle/output 30 random lines from a file
 shuf -n 30 words3
 * convert folder of webms to mp4
 for f in *.webm; do
