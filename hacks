@@ -472,3 +472,5 @@ shuf -n 30 words3
 for f in *.webm; do
     ffmpeg -i "$f" -acodec libmp3lame -ar 22050 "conv/$f.mp4"
 done
+* check what uses a folder
+fuser -mv /home/martin/
