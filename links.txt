@@ -70,3 +70,4 @@ https://www.youtube.com/watch?v=Pn_a3k1iiCQ
 https://www.youtube.com/watch?v=bReuuXOHW9k
 https://www.youtube.com/watch?v=9FYyeHkHMWE
 https://www.roastmysite.net
+https://github.com/awesomedata/awesome-public-datasets
