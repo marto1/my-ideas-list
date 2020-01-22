@@ -72,3 +72,4 @@ https://www.youtube.com/watch?v=9FYyeHkHMWE
 https://www.roastmysite.net
 https://github.com/awesomedata/awesome-public-datasets
 https://trends.google.com/trends/hottrends/visualize?nrow=5&ncol=5
+https://www.gamasutra.com/blogs/CeliaHodent/20190723/347166/Understanding_the_Success_of_Fortnite_A_UX__Psychology_Perspective.php
