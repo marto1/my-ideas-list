@@ -474,3 +474,9 @@ for f in *.webm; do
 done
 * check what uses a folder
 fuser -mv /home/martin/
+* convert a lot of images to another format
+mogrify -format png -resize 155x238  *.svg
+* ruby liquid match
+irb
+t = Liquid::Template.parse("{{ url }}")
+t.render({"data"=> [{ "id"=>4, "url"=> "example.com", "active"=> true}]})
