@@ -484,3 +484,6 @@ irb
 require 'liquid'
 t = Liquid::Template.parse("{{ url }}")
 t.render({"data"=> [{ "id"=>4, "url"=> "example.com", "active"=> true}]})
+* pandas show all rows
+import pandas
+pandas.set_option('display.max_rows', None)
