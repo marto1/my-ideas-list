@@ -284,6 +284,9 @@ if __name__ == '__main__':
 * python get current datetime
 from datetime import datetime
 now = datetime.now()
+* python emergency reinstall pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py --force-reinstall
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
@@ -487,3 +490,5 @@ t.render({"data"=> [{ "id"=>4, "url"=> "example.com", "active"=> true}]})
 * pandas show all rows
 import pandas
 pandas.set_option('display.max_rows', None)
+* clean jpeg
+jhead -purejpg example.jpg
