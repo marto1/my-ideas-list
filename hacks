@@ -492,3 +492,10 @@ import pandas
 pandas.set_option('display.max_rows', None)
 * clean jpeg
 jhead -purejpg example.jpg
+* linux - video recording
+SimpleScreenRecorder
+* linux - video editing 
+OpenShot
+* youtube-dl choose quality
+youtube-dl -F 'url'
+youtube-dl -f <number> 'url'
