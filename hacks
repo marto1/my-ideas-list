@@ -239,6 +239,18 @@ vc-print-root-log
 C-u M-x shell
 * emacs set font height
 (set-face-attribute 'default nil :height 100)
+* emacs remote shell with autocomplete
+
+C-x d
+
+/ssh:mger@iguana:
+
+open directory
+
+M-x shell
+
+delete path and leave /bin/bash
+
 * python resolve DNS
 import socket
 data = socket.gethostbyname_ex("google.com")
@@ -499,3 +511,5 @@ OpenShot
 * youtube-dl choose quality
 youtube-dl -F 'url'
 youtube-dl -f <number> 'url'
+* turn off shell echoing
+stty -echo
