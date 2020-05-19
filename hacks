@@ -508,8 +508,12 @@ jhead -purejpg example.jpg
 SimpleScreenRecorder
 * linux - video editing 
 OpenShot
+* convert a bunch of pictures to video
+ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
 * youtube-dl choose quality
 youtube-dl -F 'url'
 youtube-dl -f <number> 'url'
 * turn off shell echoing
 stty -echo
+* random password
+dd if=/dev/urandom bs=10 count=4  | base64

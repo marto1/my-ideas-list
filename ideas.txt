@@ -1,10 +1,7 @@
 ############################# NEAR FUTURE #############################
-map python imports in a graph
-simple css3 animations
 AoE tech tree 1 to 1 view in html
 tool to download images from search keyword(with multiple backends preferably)
 select and extract text with image processing from selection
-pattern finder for forth source code
 python run any application and color in used code.
 static analysis tool that shows(colors in) repeating sections of code
 a database with how much things take to compute on average.
@@ -18,21 +15,17 @@ simpler GNOME Do.
 many-to-one zero overhead compositor. (many events -> compositor -> stdout)
 git cannot download(just download) a single file or directory, bad
 bidirectional IPC communication with browser through keyboard events. (I know)
-ewmh remove decorations utility MWM_HINTS_DECORATIONS (1L << 1)
-(like https://github.com/gusnan/devilspie2/blob/f12744d0735e4dde5679734ab57bc77ee8ab1ec6/src/xutils.c#L194)
-mozilla readability - dump to stdout utility
 google it for you - open a site, focus, mark a section of text, effects - all in a url
-add fifo channels to xstatus for async updates, also optional XEMBED channel for embedding app in the window xstatus is occupying.
-html selection tool - select html on pages and copy it somewhere
-wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
 modify "sl" program to be a truck with a label "religion of peace"
 (and running people)
 ############################# WILD #############################
+wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
+pattern finder for forth source code
+map python imports in a graph
+simple css3 animations
 usb to sd adapter - gets recognized by slave device as sd card but is accesible and rewritable from usb host side(requires expensive license for commercial product)
-diagram generation language that is not painfull to use.(https://github.com/knsv/mermaid??)
-how to prove something computes?
-workflow profiler - extract patterns in working with computers.
-debug msp430 usb controller
+diagram generation language that is not painful to use.(https://github.com/knsv/mermaid??)
+workflow profiler - auto-extract patterns in working with computers.
 js deobfuscator that actually does something - at least constant replacement (tools for debugging, really, they all suck currently)
 HOMM(VCMI) interactive cli
 data tresure hunt generator - with clues for next one
