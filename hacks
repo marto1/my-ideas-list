@@ -471,6 +471,7 @@ t* - list obj=type pairs
 tf - all function signitures
 ts - all loaded structs
 ih - headers (alias for iH)
+idp <file> - load pdb file
 * get service processor ip
 sudo ipmitool lan print
 * kerberos check cache expiration date
