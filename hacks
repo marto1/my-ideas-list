@@ -460,6 +460,7 @@ packageVersion("RCurl")
 s 0x0000 - go to 0
 pd 2 - print 2 instructions from current address
 px 20 - print 20 hex bytes
+pr 20 - print (text) bytes
 axt 0x9920 - find data/code references to this address
 / stt - search for stt
 ii - imports
