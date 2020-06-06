@@ -460,7 +460,7 @@ packageVersion("RCurl")
 s 0x0000 - go to 0
 pd 2 - print 2 instructions from current address
 px 20 - print 20 hex bytes
-pr 20 - print (text) bytes
+pr 20 - print (text) bytesx
 axt 0x9920 - find data/code references to this address
 / stt - search for stt
 ii - imports
@@ -510,6 +510,8 @@ jhead -purejpg example.jpg
 SimpleScreenRecorder
 * linux - video editing 
 OpenShot
+* linux - lock screen
+xscreensaver-command -lock
 * convert a bunch of pictures to video
 ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
 * youtube-dl choose quality
