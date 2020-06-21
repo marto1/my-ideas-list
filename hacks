@@ -512,6 +512,8 @@ SimpleScreenRecorder
 OpenShot
 * linux - lock screen
 xscreensaver-command -lock
+* linux - get X11 coords over time
+watch 'xdotool getmouselocation'
 * convert a bunch of pictures to video
 ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
 * youtube-dl choose quality
