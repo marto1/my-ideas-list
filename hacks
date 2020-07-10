@@ -221,6 +221,8 @@ docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty 
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 * docker good single user jupyterhub
 docker run jupyterhub/singleuser
+* docker get pids for container
+docker top 79fb7ddd1f1e
 * emacs insert shell command
 C-u M-! <shell-command>
 * emacs pretty print xml
@@ -355,9 +357,12 @@ WHERE trigger_name = 'TRIGGER_NAME';
 * format sql query
 sqlformat --reindent --keywords upper --identifiers lower file.sql
 * git interactive rebase - amend author
+
 git rebase -i -p <commit before last one that has to be edited>
 git commit --amend --author "author <email>" --no-edit
 git rebase --continue
+* git get origin url
+git config --get remote.origin.url
 * bash fail on error
 set -e
 * apt add key to
@@ -514,6 +519,8 @@ OpenShot
 xscreensaver-command -lock
 * linux - get X11 coords over time
 watch 'xdotool getmouselocation'
+* linux - change X11 window screen size
+xdotool search --name "Mozilla Firefox" windowsize 1920 1080
 * convert a bunch of pictures to video
 ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
 * youtube-dl choose quality
@@ -523,3 +530,16 @@ youtube-dl -f <number> 'url'
 stty -echo
 * random password
 dd if=/dev/urandom bs=10 count=4  | base64
+* cut -f';' -d1 with keeping delimiter at the end
+awk 'BEGIN{FS=OFS=";"}//{print $1OFS}' alters.txt
+* get octal permissions for a file
+stat -c "%a %n" file
+* print registry trees in powershell
+$64bit_settings_regpath = Get-ChildItem -Path HKLM:\SOFTWARE\ODBC\ODBC.INI -Recurse | out-string
+$32bit_settings_regpath = Get-ChildItem -Path HKLM:\SOFTWARE\WOW6432Node\ODBC\ODBC.INI -Recurse | out-string
+* categorize in Outlook
+CTRL+F2
+* ansible run notebook
+ansible-playbook -i hosts -K playbook.yml
+* tear git repository
+git filter-branch --subdirectory-filter src/ -- master
