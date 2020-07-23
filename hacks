@@ -543,3 +543,5 @@ CTRL+F2
 ansible-playbook -i hosts -K playbook.yml
 * tear git repository
 git filter-branch --subdirectory-filter src/ -- master
+* format qcow image to ext4
+sudo virt-format --filesystem=ext4 -a android.img
