@@ -248,7 +248,8 @@ open directory
 M-x shell
 
 delete path and leave /bin/bash
-
+* emacs XML pretty print
+sgml-pretty-print
 * python shuffle list
 import random
 s = range(5)
@@ -302,6 +303,9 @@ now = datetime.now()
 * python emergency reinstall pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --force-reinstall
+* python get output from process
+from subprocess import getoutput
+getoutput("ls -l")
 * virtualenv create and activate
 e="testenv"
 virtualenv $e
@@ -364,6 +368,10 @@ git commit --amend --author "author <email>" --no-edit
 git rebase --continue
 * git get origin url
 git config --get remote.origin.url
+* git pull submodules
+git submodule update --init --recursive
+* git set ssh key per repository
+git config core.sshCommand "ssh -i ~/.ssh/id_myclient"
 * bash fail on error
 set -e
 * apt add key to
@@ -524,6 +532,8 @@ watch 'xdotool getmouselocation'
 xdotool search --name "Mozilla Firefox" windowsize 1920 1080
 * convert a bunch of pictures to video
 ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
+* ffmpeg weird resolution
+ffmpeg -i pp1.webm -vf "scale='bitand(oh*dar,65534)':'min(720,ih)'" pp1.mp4
 * youtube-dl choose quality
 youtube-dl -F 'url'
 youtube-dl -f <number> 'url'
@@ -550,3 +560,9 @@ sudo virt-format --filesystem=ext4 -a android.img
 whois example.com
 * goaccess open file
 goaccess -m /tmp.log
+* check battery status
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+* hugo highlight code
+{{< highlight go >}} A bunch of code here {{< /highlight >}}
+* gitlab merge when pipeline succeeds
+git config --global alias.mwps "push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds"
