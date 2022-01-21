@@ -564,5 +564,9 @@ goaccess -m /tmp.log
 upower -i /org/freedesktop/UPower/devices/battery_BAT0
 * hugo highlight code
 {{< highlight go >}} A bunch of code here {{< /highlight >}}
+* hugo cutoff for summary
+<!--more--> 
 * gitlab merge when pipeline succeeds
 git config --global alias.mwps "push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds"
+* python shebang
+#!/usr/bin/env python3
