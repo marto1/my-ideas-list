@@ -1,37 +1,5 @@
 ############################# NEAR FUTURE #############################
-AoE tech tree 1 to 1 view in html
-tool to download images from search keyword(with multiple backends preferably)
-select and extract text with image processing from selection
-python run any application and color in used code.
 static analysis tool that shows(colors in) repeating sections of code
-a database with how much things take to compute on average.
-auto-slideshow tile-based pintrest style viewer(with feh maybe, not so much code!?)
-scrape some "how to..." sites and add to hacks.
-cloning of running systems with hash caching(is that implemented in rsync kinda already?)
-command "templates" - set command template with placeholders (tab -> insert -> tab -> insert -> enter -> get output -> reset)
-capture drawing library calls from browsers.(ltrace!?)
-rule-based testing. Example: set variable lock variable to be only one type; or never cross range 100-240 while running program(or tests)
-simpler GNOME Do.
-many-to-one zero overhead compositor. (many events -> compositor -> stdout)
-git cannot download(just download) a single file or directory, bad
-bidirectional IPC communication with browser through keyboard events. (I know)
-google it for you - open a site, focus, mark a section of text, effects - all in a url
-modify "sl" program to be a truck with a label "religion of peace"
-(and running people)
 ############################# WILD #############################
-wireless jack - plug 3.5 mm  - industial wifi - plug 3.5 mm
-pattern finder for forth source code
-map python imports in a graph
-simple css3 animations
 usb to sd adapter - gets recognized by slave device as sd card but is accesible and rewritable from usb host side(requires expensive license for commercial product)
-diagram generation language that is not painful to use.(https://github.com/knsv/mermaid??)
-workflow profiler - auto-extract patterns in working with computers.
 js deobfuscator that actually does something - at least constant replacement (tools for debugging, really, they all suck currently)
-HOMM(VCMI) interactive cli
-data tresure hunt generator - with clues for next one
-Tree-based browsing. Tabbing is not efficient enough and does not really follow how my brain works - tree-based browsing.
-build kindle-like reader
-byte code as interface to relational databases
-get the code for the "stack overflow autocompletion", combine it with dash repos and make a standalone tool for browsing docs.
-soil prototyper - a device that can control the enviroment of soil so that it can come up with recepies for transforming bad soil to good soil
-https://www.heise.de/make/artikel/Einfacher-Ultraschall-Levitationsapparat-4022505.html
