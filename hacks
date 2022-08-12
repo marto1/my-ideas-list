@@ -1,24 +1,19 @@
-* take a snippet from a video
-ffmpeg  -ss 00:11:07 -i <url> -t 00:00:20 -async 1 -strict -2 <target>
-* loseless screen grab, conv after
-ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -qscale 0.0001 -vcodec huffyuv -acodec libmp3lame grab.avi
-ffmpeg -i grab.avi output.webm
-* lossy screen grab
-ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -threads 4 -y 1.webm
-* convert list of timestamps to dates
+* shell uncompress .xz files
+unxz
+* shell create empty image file
+fallocate -l 1G test.img
+* shell show top five CPU consuming processes
+ps aux | sort -rk 3,3 | head -n 6
+* shell show duplicates in first column
+awk '{print $1}' hashes.log | sort | uniq -cd
+* shell convert list of timestamps to dates
 grep -F 'quit' bla.txt | cut -f2 -d" " > new.txt #list of timestamps
 while read in; do date -d @"$in"; done < new.txt
-* uncompress .xz files
-unxz
-* reboot every 5th minute
-*/5 * * * * sudo /sbin/reboot
-* get Xorg version
+* shell get Xorg version
 X -version
-* fglrx dependencies
-debhelper dh-modaliases execstack dpkg-dev dpkg-dev dkms xserver-xorg-dev (only 64 bit - lib32gcc1)
-* tar compress directory
+* shell tar compress directory
 tar -zcvf archive-name.tar.gz directory-name
-* ftp upload(from secure mobile)
+* shell ftp upload(from secure mobile)
 ftp -inv IP <<EOF
 user USR PASS
 binary
@@ -26,131 +21,124 @@ cd directory
 append local-name remote-name
 bye
 EOF
-* change gateway over ssh
+* shell change gateway over ssh
 route -n
 route del default && route add default gw IP ppp0 #DANGEROUS
-* ISO 8601 format date
+* shell ISO 8601 format date
 date --iso-8601
-* check TCP connection to address
-import socket
-TCP_IP = IP
-TCP_PORT = port
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((TCP_IP, TCP_PORT))
-s.close()
-* default language env variable
-LANG=C -> default language
-* manipulating structured text data
-https://github.com/dbohdan/structured-text-tools
-* rpi get temperature sensor
+* shell default language env variable
+LANG=C # default shell language
+* shell rpi get temperature sensor
 cd /opt/vc/bin
 LD_LIBRARY_PATH=/opt/vc/lib ./vcgencmd measure_temp
-* show duplicates in first column
-awk '{print $1}' hashes.log | sort | uniq -cd
-* disable camera
+* shell disable camera
 sudo modprobe -r uvcvideo
-* get a list of offending ECDSA keys from a file
+* shell get a list of offending ECDSA keys from a file
 grep "remove with" report.log | ruby -F"with:" -ane  'puts $F' | grep ssh-keygen
-* replace each letter with a symbol in regex
-\w -> .
-replaces all letters with dots
-* remove lines from one file which are in another
+* shell remove lines from one file which are in another
 grep -F -v -x -f uhashes.log hashes.log | wc -l
-* compress .xz files
+* shell compress .xz files
 xz -k -9 <file>
-* launch xterm with geometry
+* shell format sql query
+sqlformat --reindent --keywords upper --identifiers lower file.sql
+* shell launch xterm with geometry
 DISPLAY=:0.0 xterm -geometry 80x24+10+10
-* test VW
+* shell OpenGL test
 DISPLAY=:0.0 glxgears -fullscreen
-* arandr remote
+* shell ssh to remote machine with remote graphics enabled
 ssh -X blabla
 arandr --randr-display :0.0
-* configure for 32 bit on 64 bit host
-./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
-* manually set window to a resolution
+* shell manually set window to a resolution
 DISPLAY=:0.0 wmctrl -r chrome -b toggle,fullscreen
 DISPLAY=:0.0 wmctrl -r chrome -e 0,0,0,1080,3840
-* i3 wm send restart/any config command
+* shell i3 wm send restart/any config command
 DISPLAY=:0 i3-msg restart
-* i3 reload with debug
+* shell i3 reload with debug
 DISPLAY=:0 i3-msg 'debuglog on; shmlog on; reload'
 * i3 exit fullscreen mode by default
 Alt+f
-* xrandr check
+* shell xrandr check
 DISPLAY=:0.0 xrandr -q
-* qemu load i386 raw image
+* shell qemu load i386 raw image
 qemu-system-i386 -net nic,model=rtl8139 -net user -m 512M -boot order=d -drive file=NAME.img,format=raw
-* create empty image
-fallocate -l 1G test.img
-* show top five CPU consuming processes
-ps aux | sort -rk 3,3 | head -n 6
-* exclude grepping self from ps au
+* shell exclude grepping self ps aux's own process
 ps aux | grep "[f]nord"
-* SOCKS proxy using tunnel
+* shell SOCKS proxy using tunnel
 ssh -N -D 2001 -p port username@servername
-* tar.gz folder
+* shell tar.gz folder
 tar -zcvf archive-name.tar.gz directory-name
-* diff two directories recursively
+* shell diff two directories recursively
 diff -rq dir1 dir2
-* see all userland processes
+* shell see all userland processes
 ps a --ppid 2 -p 2 --deselect
-* scan for wifi networks
+* shell scan for wifi networks
 sudo iwlist wlan0 scan
-* chrome task manager
-shift+enter
-* print last line
+* shell print last line
 tail -1
-* cut by tab
+* shell cut by tab
 cut -d'       ' -f 1
-* remove leftover packages
+* shell remove leftover packages
 tar -zcvf archive-name.tar.gz directory-name
-* diff two directories recursively
+* shell diff two directories recursively
 diff -rq dir1 dir2
-* see all userland processes
+* shell see all userland processes
 ps a --ppid 2 -p 2 --deselect
-* scan for wifi networks
+* shell scan for wifi networks
 sudo iwlist wlan0 scan
-* chrome task manager
-shift+enter
-* print last line
-tail -1
-* cut by tab
-cut -d'       ' -f 1
-* start without a cursor
+* crontab reboot every 5th minute
+*/5 * * * * sudo /sbin/reboot
+* shell start without a cursor
 startx -- -nocursor
-* change layout
+* shell change layout in X
 DISPLAY=:0.0 setxkbmap -layout dk
-* change layout on tty
+* shell change layout on tty
 sudo loadkeys dk
-* test sound over HDMI
+* shell test sound over HDMI
 speaker-test -c 2 -r 48000 -D hw:0,3
-* logrotate manually
+* shell logrotate manually
 logrotate -d [your_config_file]
-* nmap scan LAN for mac addresses
+* shell nmap scan LAN for mac addresses(fast)
 nmap -sP 192.168.0.*
-* untar tar.gz
+* shell exit virtualenv
+deactivate
+* shell split flac in cue
+shnsplit -f file.cue -t %n-%t -o flac file.flac
+* shell docker stop/rm containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+* shell docker delete dangling images
+docker rmi $(docker images -f "dangling=true" -q)
+* shell docker hub get docker file
+https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
+* shell docker clean exited containers
+docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty docker rm
+* shell docker get container ip
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+* shell docker good single user jupyterhub
+docker run jupyterhub/singleuser
+* shell docker get pids for container
+docker top 79fb7ddd1f1e
+* shell untar tar.gz
 tar -xzf file
-* delete duplicate files
+* shell delete duplicate files
 fdupes -dN .
-* tar directory
+* shell tar directory
 tar -czvf my_directory.tar.gz -C my_directory .
-* checksum recursively
+* shell checksum recursively
 find / -type f -print0 | xargs -0 md5sum > /checksums_backup.md5
-* read/write dstructive test
+* shell read/write dstructive test
 badblocks -wsv /dev/sdd
-* firefox "cannot read profile" fix
-sudo chown -R user:user .cache/mozilla/
-* get UUID of ext filesystem
+* shell get UUID of ext filesystem
 blkid /dev/sda1
-* stop dmesg spilling in console
+* shell stop dmesg spilling in console
 sudo dmesg -n 1
-* get BIOS version
+* shell get BIOS version
 cat /sys/class/dmi/id/bios_version
-* stop process
+* shell stop process
 kill -SIGSTOP
 * show fps counter chromium
 --show-fps-counter
-* extract package from system
+* shell extract package from system
 dpkg-repack
 * SBCL disable debugger from inside
 (defun debug-ignore (c h) (declare (ignore h)) (print c) (abort))
@@ -165,27 +153,30 @@ gdb <program>
 break _start
 run
 si
-* scan gmail for free stuff
-giveaway category:promotions
-free category:promotions
-* copy filesystem from place to place
+* shell copy filesystem from place to place
 rsync -avxHAX --progress / /new-disk/
-* show to which package a file belongs to
+* shell show to which package a file belongs to
 dpkg -S /bin/ls
-* good optimization flags for x86_64
--m64 -O3 -fomit-frame-pointer -funroll-loops -fomit-frame-pointer
--march=native -mtune=native
-* running 64 bit UEFI qemu with OVMF and ssh port forwarded
+* shell running 64 bit UEFI qemu with OVMF and ssh port forwarded
 qemu-system-x86_64 -L . -m 1024 -hda /dev/sdb -localtime \
 -net nic,model=rtl8139 \
 -net user,id=mynet0,net=192.168.76.0/24,dhcpstart=192.168.76.9,hostfwd=tcp::60022-:22 \
 -soundhw ac97 -usb -usbdevice tablet
-* ldd on windows exe
+* shell ldd on windows exe
 objdump -p *.exe | grep -F 'DLL Name:'
-* reset usb device
+* shell reset usb device
 echo 0 > /sys/bus/usb/devices/1-4.6/authorized
 echo 1 > /sys/bus/usb/devices/1-4.6/authorized
-* download blob video
+* configure for 32 bit on 64 bit host
+./configure --build=i686-pc-linux-gnu "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32"
+* chrome task manager
+shift+enter
+* chrome task manager
+shift+enter
+* gcc/g++ good optimization flags for x86_64
+-m64 -O3 -fomit-frame-pointer -funroll-loops -fomit-frame-pointer
+-march=native -mtune=native
+* firefox download blob video
 in firefox
 inspect element
 network
@@ -200,25 +191,6 @@ use the link to download .ts stream
  @ for matches in web addresses.
 * firefox disable addon signitures
 xpinstall.signatures.required
-* exit virtualenv
-deactivate
-* split flac in cue
-shnsplit -f file.cue -t %n-%t -o flac file.flac
-* docker stop/rm containers
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-* docker delete dangling images
-docker rmi $(docker images -f "dangling=true" -q)
-* docker hub get docker file
-https://hub.docker.com/r/jasonrivers/nagios/~/dockerfile/
-* docker clean exited containers
-docker ps --filter "status=exited" | awk '{print $1}' | xargs --no-run-if-empty docker rm
-* docker get container ip
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
-* docker good single user jupyterhub
-docker run jupyterhub/singleuser
-* docker get pids for container
-docker top 79fb7ddd1f1e
 * emacs insert shell command
 C-u M-! <shell-command>
 * emacs pretty print xml
@@ -250,11 +222,17 @@ M-x shell
 delete path and leave /bin/bash
 * emacs XML pretty print
 sgml-pretty-print
+* python check TCP connection to address
+import socket
+TCP_IP = IP
+TCP_PORT = port
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((TCP_IP, TCP_PORT))
+s.close()
 * python shuffle list
 import random
 s = range(5)
 random.shuffle(s)
-
 * python resolve DNS
 import socket
 data = socket.gethostbyname_ex("google.com")
@@ -359,8 +337,6 @@ WHERE trigger_schema = 'MY_SCHEMA';
 SELECT distinct(event_object_table)
 FROM information_schema.triggers
 WHERE trigger_name = 'TRIGGER_NAME';
-* format sql query
-sqlformat --reindent --keywords upper --identifiers lower file.sql
 * git interactive rebase - amend author
 
 git rebase -i -p <commit before last one that has to be edited>
@@ -502,10 +478,6 @@ perf stat -d <program> #detailed
 perf list
 * shuffle/output 30 random lines from a file
 shuf -n 30 words3
-* convert folder of webms to mp4
-for f in *.webm; do
-    ffmpeg -i "$f" -acodec libmp3lame -ar 22050 "conv/$f.mp4"
-done
 * check what uses a folder
 fuser -mv /home/martin/
 * convert a lot of images to another format
@@ -530,10 +502,6 @@ xscreensaver-command -lock
 watch 'xdotool getmouselocation'
 * linux - change X11 window screen size
 xdotool search --name "Mozilla Firefox" windowsize 1920 1080
-* convert a bunch of pictures to video
-ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
-* ffmpeg weird resolution
-ffmpeg -i pp1.webm -vf "scale='bitand(oh*dar,65534)':'min(720,ih)'" pp1.mp4
 * youtube-dl choose quality
 youtube-dl -F 'url'
 youtube-dl -f <number> 'url'
@@ -570,3 +538,32 @@ upower -i /org/freedesktop/UPower/devices/battery_BAT0
 git config --global alias.mwps "push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds"
 * python shebang
 #!/usr/bin/env python3
+* prince make pdf with custom css file
+prince -s style.css myfile.html 
+* ffmpeg convert a bunch of pictures to video
+ffmpeg -pattern_type glob -i '*.png' -c:v libx264 -vf fps=25 -pix_fmt yuv420p ../out.mp4
+* ffmpeg weird resolution
+ffmpeg -i pp1.webm -vf "scale='bitand(oh*dar,65534)':'min(720,ih)'" pp1.mp4
+* ffmpeg take a snippet from a video
+ffmpeg  -ss 00:11:07 -i <url> -t 00:00:20 -async 1 -strict -2 <target>
+* ffmpeg loseless screen grab, conv after
+ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -qscale 0.0001 -vcodec huffyuv -acodec libmp3lame grab.avi
+ffmpeg -i grab.avi output.webm
+* ffmpeg convert folder of webms to mp4
+for f in *.webm; do
+    ffmpeg -i "$f" -acodec libmp3lame -ar 22050 "conv/$f.mp4"
+done
+* ffmpeg lossy screen grab
+ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1366x768 -i :0.0 -threads 4 -y 1.webm
+* regex replace each letter with a symbol in regex
+\w -> .
+replaces all letters with dots
+* misc fglrx dependencies
+debhelper dh-modaliases execstack dpkg-dev dpkg-dev dkms xserver-xorg-dev (only 64 bit - lib32gcc1)
+* misc manipulating structured text data
+https://github.com/dbohdan/structured-text-tools
+* misc firefox "cannot read profile" fix
+sudo chown -R user:user .cache/mozilla/
+* misc scan gmail for free stuff
+giveaway category:promotions
+free category:promotions
